@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{hits}
+A.~Starodumov D.~Hits.
+\newblock The cms pixel readout chip for the phase 1 upgrade.
+\newblock 9 2014.
+
+\bibitem{dambach}
+S.~Dambach.
+\newblock {\em CMS pixel module optimization and B meson lifetime
+  measurements}.
+\newblock PhD thesis.
+
+\bibitem{kaestli}
+H.Chr.~Kästli et~al.
+\newblock Design and performance of the cms pixel detector readout chip.
+\newblock {\em Nucl. Instrum. Meth.}, 565(1):188--194, 2006.
+
+\bibitem{allkofer}
+Y.~Allkofer et~al.
+\newblock Design and performance of the silicon sensors for the cms barrel
+  pixel detector.
+\newblock {\em Nucl. Instrum. Meth.}, 584(1):25--41, 2008.
+
+\bibitem{psi46chip}
+Kurt Gabathuler.
+\newblock {\em PSI46 Pixel Chip - External Specification}.
+\newblock Paul Scherrer Institut, 10 2005.
+
+\end{thebibliography}

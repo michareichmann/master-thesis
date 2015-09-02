@@ -1,0 +1,35 @@
+
+\begin{acronym}[Bash]
+	\acro{PUC}{pixel unit cell}
+	\acro{ROC}{readout chip}
+	\acro{TBM}{token bit manager}
+	\acro{UB}{ultra black}
+	\acro{B}{black}
+	\acro{CMS}{Compact-Muon-Solenoid}
+	\acro{LHC}{Large Hadron Collider}
+	\acro{CERN}{the European Organization for Nuclear Research}
+	\acro{DAC}{digital to analogue converter}
+	\acro{ADC}{analogue to digital converter}
+	\acro{LD}{last DAC}
+	\acro{DTB}{digital test board}
+	\acro{ATB}{analogue test board}
+	\acro{ETH}{Eidgenössische Technische Hochschule}
+	\acro{FPGA}{Field Programmable Gate Array}
+	\acro{PSI}{Paul Scherrer Institut}
+	\acro{HV}{high voltage}
+	\acro{TTL}{Transistor-Transistor-Logic}
+	\acro{PLL}{phase-locked loop}
+	\acro{FIFO}{First In - First Out}
+	\acro{HAL}{hardware abstraction layer}
+	\acro{API}{application programming interface}
+	\acro{GUI}{graphical user interface}
+	\acro{CLI}{command line interface}
+	\acro{DAQ}{data acquisition}
+	\acro{CPU}{central processing unit}
+	\acro{PG}{pattern generator}
+	\acro{I2C}[I$^{2}$C]{Inter-Integrated Circuit}
+	\acro{DUT}{device under test}
+	\acro{TCP}{Transmission Control Protocol}
+	\acro{TU}{trigger unit}
+	\acro{COM}{centre of mass}
+\end{acronym}

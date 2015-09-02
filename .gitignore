@@ -1,0 +1,10 @@
+*.pdf
+*/*/MICHA
+*.aux
+*.out
+*.blg
+*.log
+*.backup
+*.toc
+*.thm
+*.idx

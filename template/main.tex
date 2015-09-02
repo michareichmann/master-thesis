@@ -1,0 +1,72 @@
+% BEGIN
+% ETH STYLE -> DON'T CHANGE
+\documentclass[british,11pt,a4paper]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{babel}
+\usepackage[sc]{mathpazo}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage[amsmath,thmmarks]{ntheorem}
+% =======================================================
+\usepackage{soul}
+\usepackage{pdfpages}
+\input{template/extrapackages}
+\input{newcommands}
+\input{template/layoutsetup}
+\input{template/theoremsetup}
+\input{template/macrosetup}
+\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+\makeindex
+\bibliography{Buecher}
+% END
+% ============================
+% DOCUMENT INFORMATION
+% ============================
+\title{Photo Luminosity Telescope}
+\author{Michael Philipp Reichmann}
+\thesistype{Master Thesis}
+\advisors{Advisors: Prof.\ Dr.\ Rainer Wallny, Dr.\ Dmitry Hits, Felix Bachmair}
+\department{Institute of Particle Physics}
+\date{\today}
+% ============================
+% START DOCUMENT
+% ============================
+\begin{document}
+% ========================================================
+% TITLE PAGE
+% ========================================================
+\frontmatter
+\begin{titlingpage}
+  \calccentering{\unitlength}
+  \begin{adjustwidth*}{\unitlength-24pt}{-\unitlength-24pt}
+    \maketitle
+  \end{adjustwidth*}
+\end{titlingpage}
+% ========================================================
+% ABSTRACT
+% ========================================================
+\input{template/abstract}
+% ========================================================
+% TOC
+% ========================================================
+\cleartorecto
+\tableofcontents
+\mainmatter
+
+% ========================================================
+% APPENDIX
+% ========================================================
+\appendix
+\input{template/appendix}
+% ========================================================
+% BIBLIOGRAPHY
+% ========================================================
+\backmatter
+\bibliographystyle{plain}
+\bibliography{refs}
+\includepdf[pages={-}]{declaration-originality.pdf}
+% ============================
+% DOCUMENT END
+% ============================
+\end{document}
+

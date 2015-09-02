@@ -1,0 +1,47 @@
+
+\begin{acronym}[Bash]
+	\acro{PUC}{pixel unit cell}
+	\acro{ROC}{readout chip}
+	\acro{TBM}{token bit manager}
+	\acro{UB}{ultra black}
+	\acro{B}{black}
+	\acro{CMS}{Compact-Muon-Solenoid}
+	\acro{LHC}{Large Hadron Collider}
+	\acro{CERN}{European Organization for Nuclear Research}
+	\acro{DAC}{digital to analogue converter}
+	\acro{ADC}{analogue to digital converter}
+	\acro{LD}{last DAC}
+	\acro{DTB}{digital test board}
+	\acro{ATB}{analogue test board}
+	\acro{ETH}{Eidgenössische Technische Hochschule}
+	\acro{FPGA}{Field Programmable Gate Array}
+	\acro{PSI}{Paul Scherrer Institut}
+	\acro{HV}{high voltage}
+	\acro{TTL}{Transistor-Transistor-Logic}
+	\acro{PLL}{phase-locked loop}
+	\acro{FIFO}{First In - First Out}
+	\acro{HAL}{hardware abstraction layer}
+	\acro{API}{application programming interface}
+	\acro{GUI}{graphical user interface}
+	\acro{CLI}{command line interface}
+	\acro{DAQ}{data acquisition}
+	\acro{CPU}{central processing unit}
+	\acro{PG}{pattern generator}
+	\acro{I2C}[I$^{2}$C]{Inter-Integrated Circuit}
+	\acro{DUT}{device under test}
+	\acro{TCP}{Transmission Control Protocol}
+	\acro{TU}{trigger unit}
+	\acro{COM}{centre of mass}
+	\acro{PSB}{Proton Synchrotron Booster}
+	\acro{PS}{Proton Synchrotron}
+	\acro{SPS}{Super Proton Synchrotron}
+	\acro{ALICE}{A Large Ion Collider Experiment}
+	\acro{ATLAS}{A Toroidal LHC Apparatus}
+	\acro{LHCb}{Large Hadron Collider beauty}
+	\acro{LHCf}{ Large Hadron Collider forward}
+	\acro{TOTEM}{TOTal Elastic and diffractive cross section Measurement}
+	\acro{SUSY}{supersymmetry}
+	\acro{HCAL}{hadronic calorimeter}
+	\acro{ECAL}{electromagnetic calorimeter}
+	\acro{CTR}{calibrate trigger reset}
+\end{acronym}

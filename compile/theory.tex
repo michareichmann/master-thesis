@@ -1,0 +1,41 @@
+% BEGIN
+% ETH STYLE -> DON'T CHANGE
+\documentclass[british,11pt,a4paper]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{babel}
+\usepackage[sc]{mathpazo}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage[amsmath,thmmarks]{ntheorem}
+% =======================================================
+\usepackage{soul}
+\usepackage{pdfpages}
+\input{template/extrapackages}
+\input{../newcommands}
+\input{template/layoutsetup}
+\input{template/theoremsetup}
+\input{template/macrosetup}
+\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+\makeindex
+\bibliography{Buecher}
+% END
+\begin{document}
+\section{Semiconductor Detectors}
+% ========================================================
+% INTRO
+% ========================================================
+\subsection{Introduction}
+The goal of the semiconductor detectors used during my thesis is to detect ionising particles, i.e. to get information about their spatial position and the amount of electrons created in the material. If not explicitly stated there was used silicon as semiconductor but there were tests with diamond as well. To achieve three dimensional spatial information several 2D pixelated sensors were place in one line.
+% ========================================================
+% 1 
+% ========================================================
+\subsection{Creation of electron-hole pairs}
+The valence and conduction band of semiconductors are usually separated by few $(0.4-4)$ electron Volts (eV). Ionising particles may excite electrons from the valence to the conduction band to create electron-hole pairs. At room temperature the number electron-hole pairs created due to thermal excitation is of the same order of magnitude as for minimum ionising particles. 
+% ========================================================
+% 2
+% ========================================================
+\subsection{Depletion of the semiconductor}
+To get rid of the free charge carriers at room temperature one uses a reversed biased pn-junction. 
+
+
+\end{document}
