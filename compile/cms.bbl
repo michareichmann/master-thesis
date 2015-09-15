@@ -1,8 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{lhc}
-Cern faq lhc the guide.
-\newblock Technical Report~3, CERN Communication Group, 4 2009.
+\bibitem{dectris}
+Dectris homepage, hybrid pixel details.
+\newblock \url{https://www.dectris.com/Hybrid-Pixel_Details.html}.
+\newblock [Online; accessed 09-09-2015].
 
 \bibitem{pixadd}
 CMS Collaboration.
@@ -18,10 +19,10 @@ A.~Starodumov D.~Hits.
 S.~Dambach.
 \newblock {\em CMS pixel module optimization and B meson lifetime
   measurements}.
-\newblock PhD thesis.
+\newblock PhD thesis, ETH Z{\"u}rich, 2009.
 
 \bibitem{kaestli}
-H.Chr.~Kästli et~al.
+H.Chr.~K{\"a}stli et~al.
 \newblock Design and performance of the cms pixel detector readout chip.
 \newblock {\em Nucl. Instrum. Meth.}, 565(1):188--194, 2006.
 

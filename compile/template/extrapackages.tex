@@ -59,12 +59,28 @@
 
 %% [REC] Nicer tables.  Read the excellent documentation.
 \usepackage{booktabs}
-
+% ========================================================
+% ADDED BY ME
+% ========================================================
+%suppress bad boxes!
+\makeatletter
+ \def\@textbottom{\vskip \z@ \@plus 40pt}
+ \let\@texttop\relax
+\makeatother
+\usepackage{color}
 \usepackage{lmodern}
+\usepackage{fontspec}
+\newfontfamily\ubuntu{Ubuntu}
+\usepackage{schemata}
+\usepackage[printonlyused]{acronym}
 \usepackage{wrapfig}
 \usepackage{upgreek}
-\usepackage[printonlyused]{acronym}
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{multirow}
-\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{chemfig} 
+\usepackage[super]{nth}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}

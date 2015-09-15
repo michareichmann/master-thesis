@@ -1,8 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{lhc}
-Cern faq lhc the guide.
-\newblock Technical Report~3, CERN Communication Group, 4 2009.
+\bibitem{dectris}
+Dectris homepage, hybrid pixel details.
+\newblock \url{https://www.dectris.com/Hybrid-Pixel_Details.html}.
+\newblock [Online; accessed 09-09-2015].
 
 \bibitem{pixadd}
 CMS Collaboration.
@@ -12,7 +13,7 @@ CMS Collaboration.
 \bibitem{eudaq}
 E.~Corrin.
 \newblock {\em EUDAQ Software User Manual}.
-\newblock Universit\'{e} de Gen\`{e}ve, 4 2010.
+\newblock Universit{\'e} de Gen{\`e}ve, 4 2010.
 
 \bibitem{hits}
 A.~Starodumov D.~Hits.
@@ -23,12 +24,17 @@ A.~Starodumov D.~Hits.
 S.~Dambach.
 \newblock {\em CMS pixel module optimization and B meson lifetime
   measurements}.
-\newblock PhD thesis.
+\newblock PhD thesis, ETH Z{\"u}rich, 2009.
 
 \bibitem{kaestli}
-H.Chr.~Kästli et~al.
+H.Chr.~K{\"a}stli et~al.
 \newblock Design and performance of the cms pixel detector readout chip.
 \newblock {\em Nucl. Instrum. Meth.}, 565(1):188--194, 2006.
+
+\bibitem{pdg}
+K.A.~Olive et~al.
+\newblock Review of particle physics.
+\newblock {\em Chinese Physics C}, 38(9), 090001 2014.
 
 \bibitem{allkofer}
 Y.~Allkofer et~al.
@@ -40,6 +46,25 @@ Y.~Allkofer et~al.
 Kurt Gabathuler.
 \newblock {\em PSI46 Pixel Chip - External Specification}.
 \newblock Paul Scherrer Institut, 10 2005.
+
+\bibitem{leo}
+William~R. Leo.
+\newblock {\em Techniques for Nuclear and Particle Physics Experiments},
+  volume~2.
+\newblock Springer, 1994.
+
+\bibitem{murphy}
+Sebastien Murphy.
+\newblock Preliminary results of charged pions cross-section in proton carbon
+  interaction at 30 gev measured with the na61/shine detector.
+\newblock 2010.
+
+\bibitem{hyperphys}
+Rod Nave.
+\newblock Fermi function.
+\newblock \url{http://hyperphysics.phy-astr.gsu.edu/hbase/solids/fermi.html},
+  2015.
+\newblock [Online; accessed 03-09-2015].
 
 \bibitem{spannagel}
 Simon Spannagel.

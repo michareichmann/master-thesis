@@ -27,4 +27,12 @@
 \newcommand{\lagrii}{\mathcal{L}\z{II}}
 \newcommand{\ham}{\mathcal{H}}
 \newcommand{\bul}{\item[\textopenbullet]}
-\newcommand{\terminal}[1]{\colorbox{black}{\textcolor{white}{{\fontfamily{phv}\selectfont \large{#1}}}}}
+\newcommand{\terminal}[1]{\colorbox{black}{\textcolor{white}{{\ubuntu \large{#1}}}}}
+\newcommand{\tri}{\item[$\triangleright$]}
+\newcommand{\termi}[1]{
+	\begin{itemize}
+% 		\vspace*{-10pt}
+		\tri \terminal{#1}
+	\end{itemize}}
+\newcommand{\wz}{\textcolor{white}{0}}
+\newcommand{\ubu}[1]{\begin{itemize}\tri \ubuntu #1 \end{itemize}}

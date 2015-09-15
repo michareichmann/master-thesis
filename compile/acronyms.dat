@@ -44,4 +44,7 @@
 	\acro{HCAL}{hadronic calorimeter}
 	\acro{ECAL}{electromagnetic calorimeter}
 	\acro{CTR}{calibrate trigger reset}
+	\acro{MIP}{minimum ionising particle}
+	\acro{PM}{photo multiplier}
+	\acro{TLU}{trigger logic unit}
 \end{acronym}

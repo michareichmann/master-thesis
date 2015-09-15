@@ -1,145 +1,145 @@
-
+% \tableofcontents
 % ========================================================
 % INTRO
 % ========================================================
-Being a tiny part of the \ac{CMS} collaboration I would like to start by clarifying how my experiment is integrated into the amazing project called the \ac{LHC}.
+% Being a tiny part of the \ac{CMS} collaboration I would like to start by clarifying how my experiment is integrated into the amazing project called the \ac{LHC}.
+% % ========================================================
+% % LHC
+% % ========================================================
+% \section{\acf{LHC}}
+% The LHC is the most powerful high energy particle accelerator that has ever been built on earth. The collider is located in a circular tunnel of $26659\,$m in circumference, which encloses an area of an area of $56.6\,$km$^{2}$ and partly underneath the territory of \ac{CERN}. It crosses the border between Switzerland and France and is close to the Swiss city Geneva. The accelerated particles are usually protons that are colliding with a \ac{COM} energy of $13\,$TeV \cite{lhc}, but there are also experiments with heavy ions.
+% % ========================================================
+% \subsection*{Accelerator Complex}
+% In order to increase the energy of the protons from a few meV (kinetic energy) at room temperature up to $6.5\,$TeV a succession of machines is required. Each of these machines increases the energy successively and injects the protons into the next machine until it finally reaches the last iteration, the \ac{LHC}. A schematic of the whole process can be found in \ar{p18}.\\
+% The protons are coming from an ordinary bottle of compressed hydrogen, whose molecules are stripped of their electrons in the source chamber of the linear accelerator LINAC2 which then accelerates them to $50\,$MeV using radiofrequency cavities. Having passed LINAC2, the particles are injected into the first circular accelerator, the \ac{PSB} where they are accelerated up to $1.4\,$GeV, which is already equivalent to $91.6\%$ of the speed of light. After that the \ac{PS} and the \ac{SPS} further increase their energy to $25$ respectively $450\,$GeV. Once the protons leave \ac{SPS} they are injected both clockwise and anti-clockwise into the two beam tubes of \ac{LHC} where they reach their final energy of $6.5\,$TeV within approximately $20$ minutes. Having $99.9999991\%$ of the speed of light the protons are now over $7000$ times heavier than the at rest.\\
+% There are four major and two smaller experiments that use the \ac{LHC} as particle source: the two general purpose detectors \ac{CMS} and \ac{ATLAS}, a experiment designed for b-physics \ac{LHCb} and \ac{ALICE}, which is using heavy ions. The four major experiments are located in underground caverns around the interaction points. The \ac{LHCf} and a \ac{TOTEM} are the two smaller experiments; the first is one near \ac{ATLAS} and the latter close the interaction point of \ac{CMS}.
+% \begin{figure}[ht]
+% 	\includegraphics[width=0.95\textwidth]{lhc}
+% 	\caption{Schematic of the \ac{LHC} accelerator complex \cite{lhc}.}
+% 	\label{p18}
+% \end{figure}
+% % ========================================================
+% % CMS
+% % ========================================================
+% \section{\acf{CMS}}
+% \ac{CMS}, one of the general experiments at \ac{LHC}, is located beneath the French town Cessy. One of its main goals was the recent discovery of a new boson (assumed to be Higgs). Now the remaining  goals are the study of the properties of this boson and the search for evidence of physics beyond the Standard Model, in particular \ac{SUSY} and extra dimensions. The name \ac{CMS} derives from its design, which is rather small compared to other detectors of its capability (\ac{ATLAS}). \ac{CMS} has an excellent ability to measure myon tracks and a unique, very strong solenoid magnet.\\
+% A sectional view of the whole detector is shown in \ar{p19}. It is set up in many shells of sub-detectors like layers of an onion. After the interaction, particles first pass the innermost detector, which is a tracker detector that measures i.a. the trajectory. After that comes an \ac{ECAL} and a \ac{HCAL} that measure the energy of the particles. The already mentioned sub-detectors are enclosed by the solenoid. The outermost layers outside of the coils consist of muon chamber. The \ac{CMS}-Pixel chip that is important for this thesis, is located in the innermost layer and is part of the tracker detector.
+% \begin{figure}[ht]
+% 	\centering
+% 	\includegraphics[width=0.95\textwidth]{cms_cut}
+% 	\caption{Sectional view of the CMS detector \cite{cmsdet}.}
+% 	\label{p19}
+% \end{figure}
+% % ========================================================
+% \subsection{Solenoid}
+% The shape of the solenoid strongly determines the whole design of the detector. A solenoid is a magnet of coils that are tightly wound into helices and have uniform magnetic field inside the helix, once constant electric current flows through the wires. Its purpose is to bend the paths of the particles that are created at the interaction point. It was aimed to be the strongest possible magnet since a stronger magnetic field leads to a smaller bending ratio of the particle gets and consequently increases the momentum resolution of the tracker. To reach a final magnetic field strength of $4\,$Tesla the whole magnet is cooled down to a temperature of $-268.5\,^{\circ}$C to guarantee superconductivity. Interestingly, particles with an energy of less than $1.6\,$GeV will circle inside the detector and will traverse to the end caps on a helical trajectory without ever reaching the calorimeter. 
+% % ========================================================
+% \subsection{Tracker Detector}
+% The main goal of the tracker detector is to measure the momentum and the trajectory of passing particles to be able to get an idea of the incidents after the collision. The momentum is calculated using the circular trajectory of charged particles caused by the magnetic field. The \ac{CMS} tracker records the path of the charged particle by finding its position at a number of key points at each sub-layer of the detector. That way it is possible to precisely reconstruct paths of long living particles such as muons, electrons or hadrons, but also see the tracks of short living particles such as the beauty quark.\\
+% For the whole experiment is very important to measure precise tracks on the one hand as well as to have as less disturbing\footnote{Less disturbing in that context means that the interactions of the Particles with the whole tracking detector has to be kept at a minimum.} of the particles as possible. That is one reason why only a certain number of points are measured for the tracking rather than than the maximum number. This was accomplished building $3$ layers of sub-tracker detectors around the beam line.\\
+% The innermost layer of the detector is located but $4.4\,$cm away from the interaction point where the detectors are exposed to an approximate particle flux of $100\,$Mhz\,cm$^{-2}$. That is why the most important properties of the detector have to be radiation hardness and the ability to process a very high rate of events. When the current detector was built, it was decided to make it completely out of silicon. To be able to deal with the high number of particles the inner layers are made of pixel detectors whereas the outer ones, more than $20\,$cm away from the interaction point, are made out of strip detectors.
+% % ==========================
+% \subsubsection{Pixel Detector}
+% Though only roughly the size of a shoe box, the Pixel Detector at \ac{CMS} contains $65$ million single pixels. They are arranged in three layers of barrel detectors $4.4\,$cm, $7.3\,$cm and $10.2\,$cm away from the beam and two forward detectors at either end (q.v. \ar{p22}). This system is able to reconstruct the tracks of ten million track per second and was build to withstand the duration for an operation time of ten years up to the Phase 1 Upgrade. Due to the huge amount of pixels it important keep the power consumption of the \ac{ROC}s at a minimum. Although they only need $50\,\upmu$W per pixel they are still mounted on cooling tubes so that the detector will not overheat. The cooling is also important reduce the electronic noise.\\
+% The \ac{CMS} Pixel Detector is also the most important part concerning my thesis and is explained in further detail in \ar{s130}.
+% \begin{figure}[ht]
+% 	\centering
+% 	\subbottom[\ac{CMS} silicon pixel detector \cite{cmsweb}.\label{p21}]{\includegraphics[width=0.47\textwidth]{pixelement}}
+% 	\hfill
+% 	\subbottom[Pixel layers around the beam line \cite{bora}.\label{p22}]{\includegraphics[width=0.47\textwidth]{barrel}}
+% 	\caption{Schematics of the pixel detector.}
+% 	\label{ppixdet}
+% \end{figure}\no
+% % ==========================
+% \subsubsection{Strip Detector}
+% Ten layers of strip detectors up to a radius of $130\,$cm surround the three pixel layers. A schematic of the way strip detectors are placed around the beam line is shown in \ar{p23}. First come four inner barrel layers with two inner endcaps. After them follow the outer layers: two double sided and four one sided barrel layers. Altogether the tracker detector consist of $10$ million silicon strips, which have the same working principle as the pixel detectors even though different chips are used for the readout. The whole system is also cooled down, in this case to a temperature of $-20\,^{\circ}$C.
+% \begin{figure}[ht]
+% 	\centering
+% 	\includegraphics[width=0.4\textwidth]{strip}
+% 	\caption{Tracker layers perpendicular to the beam \cite{cmsweb}.}
+% 	\label{p23}
+% \end{figure}
+% % ========================================================
+% \subsection{Calorimeter}
+% In particle physics a calorimeter is a device to measure the energy of particles. When a particle enters the detector material a chain reaction called particle shower is started until the incident particle has deposited all its energy in the calorimeter. In many cases the detectors have transverse segmentation to provide information about the direction of the particle and longitudinal segmentation to get information about the identity of a particle by the shape of the shower. Since electrons and photons interact very differently with matter compared to hadrons, two different types of calorimeters are required: the \ac{ECAL} and the \ac{HCAL}.
+% % ==========================
+% \subsubsection{\ac{ECAL}}
+% The \ac{ECAL} consists of $75848$ lead tungstate crystals (\chemfig{PbWO_{4}}), which is a scintillating material. With a short radiation length, narrow showers and a good radiation hardness \chemfig{PbWO_{4}} has excellent properties to function in such an environment. Glued on top of the crystals are photodetectors that collect the light, amplify it and transform it into into a electric signal, which then can be analysed.
+% % ==========================
+% \subsubsection{\ac{HCAL}}
+% The \ac{HCAL} is built to measure hadrons which consist out of quarks and gluons. It was designed to be as hermetic as possible, i.e. to stop every particle from the collision in order to be able to draw conclusions about missing transverse energy. It is a so called sampling calorimeter which means that it finds the position, energy and arrival of a particle by using repeating layers of a dense brass absorber and plastic scintillators. This repeating architecture is also called sandwich structure. The \ac{HCAL} is the last part of the detector that is placed inside the solenoid.
+% % ========================================================
+% \subsection{Muon Chambers}
+% Arranged on the outside of the solenoid are the muon chambers, since muons can even penetrate very dense material without losing a lot of energy. They are produced as decay products of many particles including potential new ones and thus play an import role as signals that can be triggered on. The whole muon detector consists of $1400$ muon chambers that split up into $250$ drift tubes and $540$ cathode strip chambers that track the particles and provide a trigger. The other part are $610$ resistive plate chambers that form a redundant trigger system, which decides weather to keep the data or not.
+% % ========================================================
+% \subsection{Examples}
+% A diagram of all parts and the positioning within the \ac{CMS} detector is shown in \ar{p20}. It also demonstrates how typical particles will behave passing through the various steps. Photons and electrons are both stopped in the \ac{ECAL} but due to their charge electrons show a curved path in the tracker whereas photon tracks are straight. Charged hadrons will also leave a curved track and are generally stopped in the \ac{HCAL}. Because most myons are \ac{MIP}s they will not stop at all, but show a double curved track due the opposite magnetic field on the outside of the Solenoid.
+% \begin{figure}[ht]
+% 	\centering
+% 	\includegraphics[width=0.95\textwidth]{cms_slice}
+% 	\caption{Sliced view of the CMS detector with tracks of various particles \cite{cmsweb}.}
+% 	\label{p20}
+% \end{figure}
+% % ========================================================
+% \subsection{Trigger System}
+% With almost a billion interactions per second\footnote{Roughly $20$ interactions per collision at a rate of $40\,$Mhz add up to a billion interactions} it is almost impossible to save or even analyse every single event. That is why a trigger system is required to save only the interesting events. Since there are collisions every $25\,$ns the data is stored in pipelines with precise timing information for a short time. In order not to mix up information from different events it is very important to synchronise the data streams. \\
+% The first step to reduce the huge amount of information happens through the level 1 trigger, which is a full hardware trigger that decides within $3.2\,\upmu$s if the event could contain interesting physics based on information of the calorimeter and the muon chambers. These are events with large amount of energy or unusual combination of particles for example. The level 1 trigger selects $100\,$kHz of events out of the $1\,$GHz that are available. In the next step, the high level trigger, the whole event is recreated and the information sent to computers to pre-analyse it, which makes it a full software trigger. In the end only $100$ events per second are considered interesting and will be saved.\\ 
+% The delays and the principle of the level 1 trigger of \ac{CMS} is important because it has direct connection to the trigger system used in the experiments concerning this thesis. 
+% % ========================================================
+% % CMS Pixel Chip
+% % ========================================================
+The CMS pixel chip is a tiny part of a detector of the world's most powerful high energy particle accelerator, the \ac{LHC}. It is utilised in the innermost layers of the tracker detector of \ac{CMS}, one of the two general purpose experiments at the \ac{CERN}. There it is essentially used to reconstruct particle tracks and measure the momenta of the charged particle using the tracks. The whole \ac{CMS} pixel detector is based on the pixel chip psi46v2 which has an analogue readout. During the Phase 1 Upgrade it is planned to exchange all of them with a more efficient digital silicon chip. It was also decided to add a fourth layer to the pixel detector. Due to the increase of the luminosity and \ac{COM} energy the Phase 2 Upgrade will require different materials for the innermost layers. A potential candidate are diamond pixel chips. Among other advantageous properties diamond is much more radiation resistant than silicon. Though, if diamonds are suited for that purpose is still under test.\\
+During this thesis both analogue and digital silicon chips were used and there even was an opportunity to test digital diamond pixel chips. The purpose for the conducted experiments is in parts the exact same as for \ac{CMS}: use several \ac{ROC}s as tracking device. Additional applications will be described in the following.
 % ========================================================
-% LHC
-% ========================================================
-\section{\ac{LHC}}
-The LHC is the most powerful high energy particle accelerator that has ever been built on earth. The collider is located in a circular tunnel of $26659\,$m in circumference, which covers an area of an area of $56.6\,$km$^{2}$ and is underneath the territory of \ac{CERN}. It crosses the border between Switzerland and France and is close to the Swiss city Geneva. The accelerated particles are exclusively protons that are colliding with a \ac{COM} energy of $14\,$TeV \cite{lhc}.
-% ========================================================
-\subsection*{Accelerator Complex}
-In order to increase the energy of the protons from a few keV (kinetic energy) at room temperature up to $7\,$TeV a succession of machines is required of which each increases the energy more and injects into another until it finally reaches the last iteration, the \ac{LHC}. A schematic of the whole procession can be found in \ar{p18}.\\
-The protons are coming from an ordinary bottle of compressed hydrogen, whose molecules are stripped of their electrons in the source chamber of the linear accelerator LINAC2 where they are accelerated to $50\,$MeV using radiofrequency cavities. Leaving LINAC2 the particles are injected into the first circular accelerator, the \ac{PSB} and are accelerated up to $1.4\,$GeV, which is already equivalent to $91.6\%$ of the speed of light. After that \ac{PS} and \ac{SPS} increase their energy further to $25$ respectively $450\,$GeV. Once the protons leave \ac{SPS} they are injected both clockwise and anti clockwise into the ring of \ac{LHC} where they reach their final energy of $7\,$TeV within approximately $20$ minutes. They are now over $7000$ times heavier than at rest at $99.9999991\%$ of the speed of light.\\
-At \ac{LHC} there are six experiments installed: \ac{CMS}, \ac{ATLAS}, \ac{LHCb}, \ac{ALICE}, \ac{LHCf} and a \ac{TOTEM} of which the first four are in underground caverns around the interaction points. \ac{TOTEM} is close to the interaction point of \ac{CMS} and \ac{LHCf} is near \ac{ATLAS}.
-\begin{figure}[ht]
-	\includegraphics[width=0.95\textwidth]{lhc}
-	\caption{Schematic of the \ac{LHC} accelerator complex \cite{lhc}.}
-	\label{p18}
-\end{figure}
-% ========================================================
-% CMS
-% ========================================================
-\section{\ac{CMS}}
-\ac{CMS} belongs together with \ac{ATLAS} to the two general experiments at \ac{LHC} and is located beneath the French town Cessy. Its main goals are the study of the properties of the recently found boson (assumed to be Higgs) and the search for evidence of physics beyond the standard model, in particular \ac{SUSY} and extra dimensions. The name \ac{CMS} derives from its design, which is rather small compared to other detectors of its capability, has an excellent ability to measure myon tracks and it has a unique, very strong solenoid magnet.\\
-A sectional view of the detector is shown in \ar{p19}.
+\section{Analogue Pixel Detector}\label{s130}
+The analogue pixel detector was designed, inter alia, to precisely reconstruct hits, withstand radiation damage for several years of operation, keep multiple scattering at a minimum and avoid fake hits due to noise in electronics. Each single chip consists out of $4160$ pixels in $26$ double columns and $80$ rows. The single pixels have a size of $150\,\upmu$m $\times$ $100\,\upmu$m, which adds up to a total size of $7.8\,$mm $\times\ 8.0\,$mm (q.v. \ar{p24}) and corresponds to an area of a little more than half a square centimetre. The detector itself consists of two parts: a pixelated silicon sensor and a \ac{ROC}, which have both the same arrangement of pixels. The bump bonds are schematically shown in \ar{pbumpbonds} They are attached to one another and electrically connected via indium bump bonds of roughly $20\,\upmu$m in diameter \cite{kaestli}. The connection from the \ac{ROC} to the readout as well as the connection to the bias voltage is made via delicate wire-bonds.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.95\textwidth]{cms_cut}
-	\caption{Sectional view of the CMS detector.}
-	\label{p19}
-\end{figure}
-% ========================================================
-\subsection{Solenoid}
-The shape of the solenoid strongly determined the whole design of the detector. A solenoid is magnet of coils that are tightly wound into helices and that have uniform magnetic field inside of the helix, once constant electric current flows threw the wires. Its purpose is to bend the paths of the particles that are created at the interaction point. It was aimed to be the strongest possible magnet because the stronger the magnetic field, the smaller the bending ratio of the particle gets, which in the end increases the momentum resolution of the tracker. To reach a final magnetic field strength of $4\,$Tesla the whole magnet is brought down to a temperature of $-268.5\,^{\circ}$C to guarantee superconductivity. Interestingly, particles with an energy of less than $1.6\,$GeV will circle inside the detector and will traverse to the end caps on a helical trajectory without ever reaching the calorimeter. 
-% ========================================================
-\subsection{Tracker Detector}
-The main goal of the Tracker Detector is to measure the momentum of passing particles to be able to get an idea of the incidents during the collision. The momentum is calculated the track through the magnetic field the solenoid provides. The \ac{CMS} tracker then records the path of the charged particle by finding its position at a number of key points. That way it is possible to precisely reconstruct paths of long living particles such as muon, electron or hadrons, but also see the tracks of short living particles like the beauty quark.\\
-For the whole experiment is very important to measure precise tracks on the one hand as well as to have as less disturbing of the particles as possible. That is one reason why only a certain number of points are measured for the tracking, which was accomplished building several layers around the beam line.\\
-The innermost layer of the detector is located but $4\,$cm away from the interaction point where a detectors are exposed to an approximate particle flux of $100\,$Mhz\,cm$^{-2}$. That is why one of the most important properties of the detector has to be radiation hardness. As the current detector was built, it was decided to build it completely out of silicon. To be able to deal with the high number of particles the inner layers are made of pixel detectors whereas the outer ones more than $20\,$cm away from the interaction are made out of strip detectors.
-% ==========================
-\subsubsection{Pixel Detector}
-Though only roughly the size of a shoe box, the Pixel Detector at \ac{CMS} contains $65$ million single pixels. They are arranged in three layers of barrel modules $4\,$cm, $7\,$cm and $11\,$cm away from the beam and two disks at either end (q.v. \ar{p22}). This system is able to reconstruct the tracks of ten million track per second and was build to withstand the duration for an operation time of ten years up to the Phase 1 Upgrade. Due to the huge amount of pixels it import keep the power consumption of the pixels at a minimum. Although they only need $50\,\upmu$W per pixel they are still mounted on cooling tubes so that the detector will not overheat.\\
-The \ac{CMS} Pixel Detector is also the most important part concerning my thesis and is explained in further detail in \ar{s130}.
-\begin{figure}[ht]
-	\centering
-	\begin{subfigure}[b]{0.47\textwidth}
-        \includegraphics[width=\textwidth]{pixelement}
-		\caption{\ac{CMS} silicon pixel detector}
-		\label{p21}
-	\end{subfigure}
+	\subbottom[Principle of a sensor bump bonded to the a chip \cite{dectris}.]{\includegraphics[width=0.47\textwidth]{bumpbonds}\label{pbumpbonds}}
 	\hfill
-	\begin{subfigure}[b]{0.47\textwidth}
-		\includegraphics[width=\textwidth]{barrel}
-		\caption{Pixel layers around the beam line.}
-		\label{p22}
-	\end{subfigure}
-	\caption{Schematics of the pixel detector.}
-	\label{ppixdet}
-\end{figure}
-% ==========================
-\subsubsection{Strip Detector}
-Right after the three pixel layer follow ten layers of strip detectors up to a radius of $130\,$cm. A schematic of the way they are placed is shown in \ar{p23}. First come four inner barrel layers with two inner endcaps. After that follow the outer layers: two double sided and four one sided barrel layers. Altogether the tracker detector consist of $10$ million silicon strips, which have the same working principle as the pixel detectors even though different chips are used for the readout. To keep radiation damage at a minimum the whole system is cooled down to a temperature of $-20\,^{\circ}$C.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.4\textwidth]{strip}
-	\caption{Tracker layers perpendicular to the beam.}
-	\label{p23}
-\end{figure}
-% ========================================================
-\subsection{Calorimeter}
-In particle physics a calorimeter is a device to measure the full energy of particles. When a particle enters the detector material a chain reaction called particle shower is started until the incident particle has deposited all its energy in the calorimeter. In many cases the detectors have transverse segmentation to provide information about the direction of the particle and longitudinal segmentation to get information about the identity of a particle by the shape of the shower. Since electrons and photons interact very differently with matter at the same energy as hadrons two different types of calorimeters are required: the \ac{ECAL} and the \ac{HCAL}.
-% ==========================
-\subsubsection{\ac{ECAL}}
-The \ac{ECAL} consists of $75848$ lead tungstate crystals (PbWO$_{4}$), which is a scintillating material and has with its short radiation length, narrow showers and its good radiation hardness excellent properties to function in such an environment. Glued on top of the crystals are photodetectors that collect the light, amplify it and transform it into into a electric signal that is then sent to analysis.
-% ==========================
-\subsubsection{\ac{HCAL}}
-The \ac{HCAL} is built to measure hadrons which consist out of quarks and gluons. It was designed to be as hermetic as possible, i.e. to stop every particle from the collision in order to be able to draw conclusions about missing transverse energy. It is a so called sampling calorimeter which means that it finds the position, energy and arrival of a particle by using repeating layers of a dense brass absorber and plastic scintillators. The \ac{HCAL} is the last part of the detector that is placed inside the solenoid.
-% ========================================================
-\subsection{Muon Chambers}
-Outside of the solenoid are the muon chambers, since muons can penetrate very dense material for several meters without interacting at all. They are produced as decay products of many particles including potential new ones and thus play an import role as signals that can be triggered on. The whole muon detector consists of $1400$ muon chambers that split up into $250$ drift tubes and $540$ cathode strip chambers that track the particles and provide a trigger and $610$ resistive plate chambers that form a redundant trigger system, which decides weather to keep the data or not.\as 
-A diagram of all parts and the positioning within the \ac{CMS} detector is shown in \ar{p20}. It also demonstrates how typical particles will behave passing through the various steps.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.95\textwidth]{cms_slice}
-	\caption{Sliced view of the CMS detector with tracks of various particles.}
-	\label{p20}
-\end{figure}
-% ========================================================
-\subsection{Trigger System}
-With almost a billion interactions per second it is almost impossible to save or even analyse every single event. That is why a trigger is required to save only the interesting events. Since there are collisions every $25\,$ns the data is stored in pipelines with precise timing information for a short time. In order not to information from different events it all the streams of one event have to be synchronised. \\
-The first step to reduce the huge amount of information is called the level 1 trigger, which is a full hardware trigger, that decides within $3.2\,\upmu$s if the event could contain interesting physics based on information of the calorimeter and the muon chambers. These are events with large amount of energy or unusual combination of particles for example. This trigger already reduces the number of events per second to $100000$. In the next step, the high level trigger, the whole event is recreated and the information sent to computers to pre-analyse it, which makes it a full software trigger. In the end only $100$ events per second are considered interesting and will be saved.\\ 
-The level 1 trigger of \ac{CMS} is interesting because it has direct connection to the trigger system I was using. 
-% ========================================================
-% CMS Pixel Chip
-% ========================================================
-\section{CMS Pixel Chip}\label{s13}
-All pixel chips that are currently in use at \ac{CMS} are analogue silicon chips, which means that their output data format is an analogue signal. During the Phase 1 Upgrade it is planned to exchange all of them with a more efficient silicon digital chip. Due to the increase of the luminosity and \ac{COM} energy there has even been the notion to add fourth layer of pixel chips and use diamond pixel chips for the innermost layer. Among other advantageous properties diamond is much more radiation resistant than silicon. Though, if diamonds are suited for that purpose is still under test.\\
-For my thesis I was using both analogue and digital silicon chips, I was even given the chance to participate in the testing of digital diamond pixel chips. The purpose for my thesis is in parts the exact same as for \ac{CMS}: use several of them as tracking device. Additional applications will be described in the following.
-% ========================================================
-\subsection{Analogue Pixel Detector}\label{s130}
-The analogue pixel detector was designed i.a.to precisely reconstruct hits, withstand radiation damage for several years of operation, keep multiple scattering at a minimum and avoid fake hits due noise in electronics. Each single detector consists out of $4160$ pixels in $26$ double columns and $80$ rows. The single pixels have a size of $150\,\upmu$m $\times$ $100\,\upmu$m, which adds up to a size of $7.8\,$mm $\times\ 8.0\,$mm (q.v. \ar{p24} and \ar{p21}) and corresponds to an area of a little more than half a square centimetre. The detector itself consists of two parts: a pixelated silicon sensor and a \ac{ROC}, which have both the same arrangement of pixels. They are attached to one another and electrically connected via indium bump bonds of roughly $20\,\upmu$m \cite{kaestli}. The connection from the \ac{ROC} to the readout as well as the connection to the bias voltage is made via delicate wire-bonds.
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=6cm]{ROC0}
-	\caption{Photograph of an analogue pixel detector}
-	\label{p24}
-\end{figure}
+	\subbottom[Photograph of an analogue pixel detector. The wire bonds are visible in the top right corner]{\includegraphics[width=0.47\textwidth]{ROC0}\label{p24}}
+	\caption{Parts of the pixel detector.}
+	\label{panaroc}
+\end{figure}\no
 % =======================
-\subsubsection{Sensor}\label{s220}
-For the current detector silicon was chosen as sensor material. The average energy to create an electron-hole pair in silicon is $3.6\,$eV. By applying a bias voltage to the sensor the charge carriers are moved to the collecting electrode and a signal can be measured. The silicon sensor itself consists of high-dose n-implanted pixels introduced into a high resistive n-substrate. The backside of the sensor is p-doped and thus creates a pn-junction \cite{allkofer}. The small pixel size was chosen to get a good spatial resolution. The thickness of the sensor is about $285\,\upmu$m which means that minimum ionising particles will most probably create approximately $22000$ electron-hole pairs\footnote{The energy is loss is Landau distributed. This value is equivalent to the peak value of this distribution (q.v. \ar{makeref})} in the sensor. In order to deplete an unirradiated sensor of that thickness completely one has to apply a bias voltage of roughly $100\,$V \cite{pixadd}. For irradiated detectors that value may be up to four times higher.
+\subsection{Sensor}\label{s220}
+For the current detector silicon was chosen as sensor material. The average energy to create an electron-hole pair in silicon is $3.6\,$eV. By applying a bias voltage to the sensor the charge carriers are moved to the collecting electrode and a signal can be measured. The silicon sensor itself consists of high-dose n-implanted pixels introduced into a high resistive n-substrate. The backside of the sensor is p-doped and thus creates a pn-junction \cite{allkofer}. The small pixel size was chosen to get a good spatial resolution. The thickness of the sensor is about $285\,\upmu$m so that minimum ionising particles will most probably create approximately $22000$ electron-hole pairs\footnote{The energy is loss is Landau distributed. This value is equivalent to the peak value of this distribution (q.v. \ar{slandau})} in the sensor. In order to fully deplete an unirradiated sensor of that thickness completely one has to apply a bias voltage of roughly $100\,$V \cite{pixadd}. For irradiated detectors that value may be a couple times higher, depending on the irradiation damage. 
 % =======================
-\subsubsection{\ac{ROC}}\label{sroc}
-The \ac{ROC} has of two parts: An active part consisting out of $26$ double columns of $2\times80$ \ac{PUC}s matching the pixels of the sensor and a periphery consisting of a control interface and a data buffer, this is depicted in \ar{p8}. In order for the \ac{ROC} to record data, handle triggers and be read out the buffer splits up into four different counters:
+\subsection{\acs{ROC}}\label{sroc}
+The \ac{ROC} has two parts: An active part consisting out of $26$ double columns of $2\times80$ \ac{PUC}s matching the pixels of the sensor and a periphery consisting of a control interface block, a data buffer, a time-stamp buffer and $35$ supply pads; this is depicted in \ar{p8}. All the signals going to and coming from the \ac{ROC} are put on these supply pads.\\
+In order for the \ac{ROC} to record data, handle triggers and manage the readout, it also has four different counters:
 \begin{enumerate}
-	\item $8\,$bit bunch crossing counter - time stamp in the timestamp buffer
-	\item $8\,$bit bunch crossing counter with trigger delay - runs a number of counts behind the bunch crossing counter (adjustable by \ac{DAC} wbc)
-	\item $4\,$bit trigger counter
-	\item $4\,$bit token counter
+	\item An $8\,$bit bunch crossing counter - whose information is sent to the time-stamp buffer,
+	\item an $8\,$bit bunch crossing counter with trigger delay - runs a number of counts behind the bunch crossing counter (adjustable by the \ac{DAC} value wbc),
+	\item an $4\,$bit trigger counter,
+	\item an $4\,$bit token counter.
 \end{enumerate}\par
 The periphery is the reason is why the \ac{ROC} is with $7.9\,$mm$\times\ 9.8\,$mm 
-\begin{wrapfigure}{l}{8cm}
-	\includegraphics[width=7.9cm]{ROC_scheme}
+\begin{wrapfigure}{l}{7.2cm}
+	\vspace*{-10pt}
+	\includegraphics[width=7.2cm]{ROC_scheme}
 	\caption{schematics of a \ac{ROC} \cite{psi46chip}}
 	\label{p8}
+	\vspace*{-5pt}
 \end{wrapfigure}  
-a few millimetres longer than the sensor. The \ac{ROC} is programmable with a set of  $26$ \ac{DAC} values (q.v. \ar{t0}) that are required to control its behaviour, since every \ac{ROC} differs from another and they have to be comparable. More details about the \ac{DAC}s can be found in \ar{sdacs}. In order to maintain the \ac{ROC} at constant temperatures it also equipped with a temperature sensor.\\
-If a particle hit creates electron-hole pairs in the sensor a voltage signal is induced in the corresponding \ac{PUC}. A schematic of a \ac{PUC} is shown in \ar{p9}. Once a signal enters the \ac{PUC} it gets amplified and shaped. If it exceeds a certain threshold, which is tunable with one the \ac{DAC}s, it will be send to the periphery. The pixel information and the bunch crossing are then stored in the buffer for each double column. The option to sent calibration signals directly to the front end of the \ac{PUC} makes it very easy to test the basic functionality of the \ac{ROC} without having any particles inducing signals. There is a switch to enable and disable sending these calibrates for every pixel.\\
-Furthermore, an important feature of the analogue \ac{ROC} is the so called fast-OR. Every time the threshold of a single pixel is exceeded the \ac{ROC} sends out this signal. It is an logical OR of all pixels of the \ac{ROC} and its shape gives conclusions distribution of hit pixels (q.v. \ar{makesection}). It is very useful as trigger signal for other devices or as self trigger.
+a few millimetres longer than the pixelated area of the sensor. The \ac{ROC} is programmable with a set of  $26$ \ac{DAC} values (q.v. \ar{t0}) that are required to control its behaviour. More details about the \ac{DAC}s can be found in \ar{sdacs}. The \ac{ROC} and its behaviour is temperature dependent, which is why it is also equipped with a temperature sensor.\\
+If electron-hole pairs are created in the sensor, a voltage signal is induced in the corresponding \ac{PUC}. A schematic of a \ac{PUC} is shown in \ar{p9}. Once a signal enters the \ac{PUC} it gets amplified and shaped. If it exceeds a certain threshold, which is tunable with one the \ac{DAC}s, a signal is immediately sent to the periphery that will save the current bunch crossing into the time stamp buffer. The information of the hit (the \ac{PUC} address and the \ac{PH}) will be sent to a sample and hold capacitance until it is read out, which happens every $25\,$ns. Once read out, the data is stored in the data buffer.\\ 
+There is an option to sent calibration signals directly to the front end of the \ac{PUC} that makes it very easy to test the basic functionality of the \ac{ROC} without requiring any particle hits. For every pixel the \ac{PUC} has a register to enable and disable sending these calibrates.\\
+Furthermore, an important feature of the analogue \ac{ROC} is the so called fast-OR. Every time the threshold of a single pixel is exceeded, the \ac{ROC} sends out this signal. It is an logical OR of all pixels of the \ac{ROC} and its shape gives, inter alia, conclusions about the distribution of hit pixels (q.v. \ar{sfastor}). It is very important as trigger signal for other devices or as self trigger.
 \begin{figure}[ht]
 	\includegraphics[width=0.95\textwidth]{PUC}
-	\caption{schematic view of a \ac{PUC} \cite{dambach}}
+	\caption{Schematic view of a \ac{PUC} \cite{dambach}.}
 	\label{p9}
 \end{figure}
 % =======================
-\subsubsection{\ac{DAC}s}\label{sdacs}
-An overview of all existing \ac{DAC}s for the analogue pixel chip is shown in \ar{t0} with a short explanation of most of the \ac{DAC}s. In the following I am going to name the most important ones concerning my work.\\
-To operate the chip it has to be supplied with a voltage. If was found that the chip is showing best results while operating at a stable analogue current of $24\,$mA \cite{dambach}. This current can be adjusted by the $8-$bit \ac{DAC} \textit{vana}. To be able to do basic tests with calibrate signals the correlation between \textit{vthrcomp} and \textit{} has to be taken into account. It is only working in a certain region called ``tornado''. Furthermore a common threshold for all pixels is of great importance. To achieve this the inverse \ac{DAC} \textit{vthrcomp} is set to the lowest threshold of all pixels for a fixed \textit{vcal}. In the next turn the \textit{vcal} values are measured where the pixels start showing a signal and the pixel with the highest threshold is selected. \textit{Vtrim} is then set to cover exact the distance from the highest to the lowest threshold.\\
-Since for the undertaken experiments it was most important to have a stable fast-OR, \textit{vicolor}, \textit{vnpix} and \textit{vsumcol} were set in a way to have the maximum amplitude of the signal regardless of the shape.\\
-\textit{Phoffset} and \textit{vcomp\_adc} were used to adjust the address levels of the \ac{ROC}.
+\subsection{\acs{DAC}s}\label{sdacs}
+An overview of all existing \ac{DAC}s for the analogue pixel chip with a short explanation is shown in \ar{t0} and \ar{t2}. In the following the most important \ac{DAC}s concerning this thesis are named.\\
+In order to operate the chip it has to be supplied with a voltage. It was found that the chip is showing the best results while operating at a stable analogue current of $24\,$mA \cite{dambach}. This current can be adjusted by the $8\,$bit \ac{DAC} \textit{vana}. To be able to do basic tests with calibrate signals the correlation between \textit{vthrcomp} and \textit{caldel} has to be taken into account. It is only working in a certain region, which is explained in more detail in \ar{stornado}. Furthermore a common threshold for all pixels is of great importance. To achieve this a process called trimming is applied that exploits the inverse \ac{DAC} \textit{vthrcomp} and the \ac{DAC}s \textit{vcal} and \textit{vtrim}. More information about the trimming can be found in \ar{strim}. \textit{Vthrcomp} sets the global comparator threshold and \textit{vtrim} is responsible for the amount this global threshold can be lowered for each pixel. \textit{Vcal} regulates the amplitude of the calibrate signal and can be converted to the number of electrons created in the sensor. That is why it is also used to set a value for the common threshold.\\
+Since for the undertaken experiments it was most important to have a stable fast-OR, \textit{vicolor}, \textit{vnpix} and \textit{vsumcol} were set in a way to have the maximum amplitude of the signal regardless of the shape. More details about the fast-OR and the effect of these \ac{DAC}s are in \ar{sfastor}.\\
+\textit{Phoffset} and \textit{vcomp\_adc} can be used to adjust the address levels of the \ac{ROC}.
 \begin{table}[ht]
 	\begin{tabularx}{\textwidth}{c|l|X}
+		\noalign{\hrule height 2pt}
 		\textbf{\#} & \multicolumn{1}{c}{\textbf{Name(s)}} & \multicolumn{1}{|c}{\textbf{Explanation}}	\\\noalign{\hrule height 2pt}
 		\multicolumn{3}{c}{\textbf{Voltage regulators}}														\\\hline
 		$01$ & 	vdig				& sets the digital current 												\\\hline
@@ -148,16 +148,16 @@ Since for the undertaken experiments it was most important to have a stable fast
 		$04$ & 	vcomp				& regulates the supply voltage of the comparator						\\\noalign{\hrule height 2pt}
 		\multicolumn{3}{c}{\textbf{Analogue Signal (\ac{PUC})}}												\\\hline
 		$05$ &	vleak\_comp // vleak& controls leakage current 												\\\hline
-		$06$ &	vrgpr				& 				 														\\
-		$07$ &	vwllpr				& control the pre-amplifier and the shaper			 					\\
-		$08$ &	vrgsh				& thereby the shape of the incoming signal								\\
+		$06$ &	vrgpr				& \multirow{4}{7.6cm}{together control the pre-amplifier and the shaper and thereby the shape of the incoming signal}\\
+		$07$ &	vwllpr				& 			 															\\
+		$08$ &	vrgsh				& 																		\\
 		$09$ &	vwllsh				&																		\\\hline
 		$10$ &	vhlddel				& slightly influences the pulse height for different \textit{vcals} and pixels	\\\hline
 		$11$ &	vtrim				& defines how much the trim bits for each pixel will increase the threshold\\\hline
 		$12$ &	vthrcomp			& global comparator threshold											\\\noalign{\hrule height 2pt}
 		\multicolumn{3}{c}{\textbf{Fast-OR Trigger (\ac{PUC})}}												\\\hline
-		$22$ &	vicolor 			&  																		\\
-		$23$ &	vnpix 				& define the shape of the fast-OR signal 								\\
+		$22$ &	vicolor 			& \multirow{3}{7.6cm}{together define the shape of the fast-OR signal}		\\
+		$23$ &	vnpix 				&  																		\\
 		$24$ &	vsumcol	 			&  																		\\\noalign{\hrule height 2pt}
 		\multicolumn{3}{c}{\textbf{Calibrate Signal (\ac{PUC})}}											\\\hline
 		$22$ &	vcal	 			& sets the voltage for the calibrate signal (two ranges) 				\\\hline
@@ -168,9 +168,10 @@ Since for the undertaken experiments it was most important to have a stable fast
 		$15$ &	voffsetop			& shift of pulse height  												\\\hline
 		$16$ &	vibiasop			& switch for pulse height and influence of linear range 				\\\hline
 		$17$ &	voffsetroc // phoffset	& switch for pulse height and influence of linear range 			\\\hline
-		$18$ &	vion				& scaling of the pulse heights 											\\\noalign{\hrule height 2pt}
+		$18$ &	vion				& scaling of the pulse heights 											\\
+		\noalign{\hrule height 2pt}
 	\end{tabularx}					
-	\caption{\ac{DAC}s of the pixel chip \cite{dambach}}
+	\caption{\ac{DAC}s of the pixel chip \cite{dambach}. Some \ac{DAC}s were renamed during the evolution of the chip which is why one \ac{DAC} can have several names.}
 	\label{t0}
 \end{table}\no
 % =======================
@@ -181,7 +182,7 @@ Since for the undertaken experiments it was most important to have a stable fast
 		$20$ &	vibias\_ph // phscale& scaling of the pulse height 											\\\hline
 		$21$ &	vibias\_roc 			& scaling of the \ac{ROC} address levels and the pulse height 		\\\noalign{\hrule height 2pt}
 		\multicolumn{3}{c}{\textbf{Registers}}																\\\hline
-		$253$ &	ctrlreg 			& switch between low and high vcal range (bit 2), full and half readout speed (bit 0) and on/off (bit 1)\\\hline
+		$253$ &	ctrlreg 			& switch between low and high vcal range (bit 2), full and half readout speed (bit 0) and on/off of the whole \ac{ROC} (bit 1)\\\hline
 		$254$ &	wbc		 			& sets the bunch crossing at which the data will be read out 			\\\hline
 		$255$ &	rangetemp 			& switch for different ranges of the temperature sensor  				\\\noalign{\hrule height 2pt}
 	\end{tabularx}					
@@ -189,74 +190,77 @@ Since for the undertaken experiments it was most important to have a stable fast
 	\label{t2}
 \end{table}\no
 % =======================
-\subsubsection{Readout \& Trigger}\label{sread}
-\begin{figure}[ht]
-	\centering
-	\begin{subfigure}[b]{0.47\textwidth}
-        \includegraphics[width=\textwidth]{siganalog}
-		\caption{Measured signal of several single pixel hits.}
-		\label{panasig}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[b]{0.47\textwidth}
-		\includegraphics[width=\textwidth]{levels}
-		\caption{Schematic signal of one single pixel hit.}
-		\label{p7}
-	\end{subfigure}
-	\caption{Signals of the analogue \ac{ROC}}
-	\label{procsig}
-\end{figure}
-Each single detector is set up to be read out in zero suppression mode, which means that for every single pixel hit, which exceed the threshold, following information is sent to the periphery: The time stamp of the current bunch crossing is written into the time stamp buffer and the analogue signals are written into the next free data buffer. This process happens autonomously and asynchronously for every double column. The information has to be kept until a trigger arrives. The pixel hits and the pulse height are read out at a frequency of $40\,$MHz, which corresponds to the \ac{LHC} bunch crossing frequency and are stored in the \ac{ROC} buffer for a certain amount of time: until the chip received a trigger or the buffer is full.\\
-The \ac{ROC} may receive four different kinds of signals in order to readout the data:
+\subsection{Readout \& Trigger}\label{sread}
+Each \ac{ROC} is set up to be read out in zero suppression mode, which means that only for pixel hits that exceed the threshold, the following information is sent to the periphery: The time stamp of the current bunch crossing is written into the time stamp buffer and the analogue signals are written into the next free data buffer. This process happens autonomously and asynchronously for every double column.\\
+Concerning the readout of the \ac{ROC} two external signal lines are of importance: The \ac{CTR} and the token. As the name suggests, the former can send three kinds of information depending on the length of the pulse:
 \begin{enumerate}
-	\item a trigger signal, length one clock cycle
-	\item a calibrate signal, length two clock cycles
-	\item a reset signal, length three clock cycles
-	\item a token to collect the data
+	\item a trigger signal, which is two clock cycles long.
+	\item a calibrate signal, which is one clock cycle long.
+	\item a reset signal, which is three clock cycle long.
 \end{enumerate}
-The first three are sent over a single data line and are distinguished by the length of the signal. They are called \ac{CTR} in short.\\
-Hits that were sent to the periphery are validated by the external trigger signal by comparing their corresponding time stamps with the delayed bunch crossing counter otherwise the hits are cleared. If the validation succeeds, the trigger counter is latched into the periphery, i.e. the double column is frozen and will not record further data until they are read out or the \ac{ROC} received the reset signal. Other double columns without validated hits remain active. When the latched trigger counter is matching the token counter the double column is set to readout mode and the trigger counter is incremented. As soon as the \ac{ROC} receives the token bit the the frozen double columns are read out and reset consecutively. Just before the token leaves the chip, the token counter is incremented as well. Illustrations of the trigger validation and the readout procedure are shown in \ar{pro}. \\
-An example of an analogue readout with only the information of the the \ac{ROC} is shown in \ar{procsig}. To every readout the \ac{ROC} adds a header, which is three clock cycles long. It contains an \ac{UB} level that is a very low, negative level and serves as reference, a \ac{B} level that is the zero reference of the differential signal and a level that is called \ac{LD}, which either points to the value the last \ac{DAC} was set to or the value of the temperature sensor of the chip. For every single hit pixel the \ac{ROC} will provide five levels of position information and one level with information about the pulse height, which are added to the header. If no pixel was hit or the hits were not validated, the \ac{ROC} will send nothing but a header.\\
-It is possible to read out several \ac{ROC}s with a single token. In that case the token is sent from on \ac{ROC} to the next collecting a header of each \ac{ROC} and the corresponding hit information s.t. a structure like Header/Hit/Header/Hit/Hit/Header/Header/Hit etc. will form. In my case the readout concerning sending and receiving \ac{CTR} and token is managed by an emulated \ac{TBM} from the \ac{DTB} connected to the \ac{ROC} that is described in \ar{sdtb}
+The information in the \ac{ROC} data buffer has to be kept until a potential trigger arrives. They are stored in the data buffer until one of the following events happens: 
+\begin{itemize}
+	\item The data was successfully read out by a connected device.
+	\item The trigger window is exceeded (the bunch crossing counter passes the delayed time-stamp).
+	\item The data buffer is full.
+	\item A reset signal was received.
+\end{itemize}
+The process of the readout is described in the following: Hits that were sent to the periphery are validated by the external trigger signal by comparing their corresponding time stamps with the delayed bunch crossing counter. Non-validated hits are cleared. If the validation succeeds, the trigger counter is latched into the periphery, i.e. the double column is frozen and will not record further data until the information is read out or the \ac{ROC} receives a reset signal. Other double columns without validated hits remain active. When the latched trigger counter is matching the token counter the double column is set to readout mode and the trigger counter is incremented. As soon as the \ac{ROC} receives a token the frozen double columns are read out and reset. A token sent to the \ac{ROC} travels along the periphery consecutively reading out frozen \ac{DC}s. Just before the token leaves the periphery of a \ac{DC}, the token counter of that column is incremented as well. To every readout of the $26$ \ac{DC}s the \ac{ROC} also adds a header. Illustrations of the trigger validation and the readout procedure are shown in \ar{pro}.
 \begin{figure}[ht]
 	\centering
-	\begin{subfigure}[b]{0.37\textwidth}
-        \includegraphics[width=\textwidth]{trigger}
-		\caption{Trigger validation.}
-		\label{ptrig}
-	\end{subfigure}
+	\subbottom[Trigger validation.]{\includegraphics[width=0.37\textwidth]{trigger}\label{ptrig}}
 	\hfill
-	\begin{subfigure}[b]{0.57\textwidth}
-		\includegraphics[width=\textwidth]{token}
-		\caption{Readout procedure.}
-		\label{ptok}
-	\end{subfigure}
+	\subbottom[Readout procedure.]{\includegraphics[width=0.57\textwidth]{token}\label{ptok}}
 	\caption{Schematics of the readout of the \ac{ROC}. bc is short for bunch crossing and DC stands for double column}
 	\label{pro}
-\end{figure}
+\end{figure}\no
+% =======================
+\subsection{Data Format}\label{sdata}
+An example of an analogue readout with only the information of the \ac{ROC} is shown in \ar{procsig}. The \ac{ROC} header is three clock cycles long. It contains an \ac{UB} level that is a very low, negative level and serves as reference, a \ac{B} level that is the zero reference of the differential signal and a level that is called \ac{LD}. The latter either points to the value the last \ac{DAC} was set to or the value of the temperature sensor of the chip. For every single pixel that was hit the \ac{ROC} will provide five levels containing the pixel address and one level with information about the pulse height. These six level are added to the header for each hit pixel. If no pixel was hit or the hits were not validated, the \ac{ROC} will send nothing but a header if a readout is started.\\
+It is possible to read out several \ac{ROC}s with a single token. In that case the token is sent from one \ac{ROC} to the next collecting a header of each \ac{ROC} and the corresponding hit information s.t. a structure like header/hit/header/hit/hit/header/header/hit etc. will form. The readout concerning sending and handling trigger, reset and token is managed by a \ac{TBM}. For all the experiments described in the thesis the data was read with a \ac{DTB} that was developed at \ac{PSI}. The \ac{DTB} utilises a \ac{TBM} emulated on its \ac{FPGA} and is described in more detail in \ar{sdtb}.\\
+\begin{figure}[ht]
+	\centering
+	\subbottom[Measured signal of several single pixel hits.\label{panasig}]{\includegraphics[width=0.47\textwidth]{siganalog}}
+	\hfill
+	\subbottom[Schematic signal of one single pixel hit.\label{p7}]{\includegraphics[width=0.47\textwidth]{levels}}
+	\caption{Signals of the analogue \ac{ROC}}
+	\label{procsig}
+\end{figure}\no
+% =======================
+\subsubsection{\ac{I2C} Address}\label{si2c}
+In order to be able to operate more than one \ac{ROC} with a single \ac{DTB}, every \ac{ROC} has a $4\,$bit \ac{I2C} address. The address can be set by connecting the supply pads $22-25$ to ground, of which each is equivalent to one bit. The bits are active if they are grounded, therefore the \ac{I2C} address is zero if none of the pads is connected. By sending commands to these addresses each \ac{ROC} can be programmed independently.
+% =======================
+\subsubsection{\ac{TBM}}\label{stbm}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.95\textwidth]{tbm}
+	\caption{Process chart of the emulated \ac{TBM}.}
+	\label{ptbm}
+\end{figure}\no
+A process chart of the basic functionality of the \ac{DTB}'s \ac{TBM} is shown in \ar{ptbm}. While passing through the \ac{TBM} incoming triggers [TRG]  increment the $4./$bit trigger counter and write an entry into the trigger queue. This information is then read by the token controller, which sends out a token [TOUT] for each trigger and also receives the tokens [TIN] again that went to the \ac{ROC}. Once the token was received the the respective trigger gets cleared from the queue. The maximum amount of triggers in the trigger queue is $16$. If more triggers pile up until the [TIN] comes back, the triggers are caught by a gate where they are annihilated. There is also the possibility to clear the trigger queue with a reset signal. The token controller as well as the trigger queue send information to the header generator. When [TIN] arrives the header generator adds the information to the digital data stream in form of a header and a trailer, which each consist of two $16\,$ bit data words. The header contains an $8\,$bit event number and information about the trigger position inside the clock cycle.  The trailer contains, inter alia, a stack counter that is equivalent to the number of queued triggers. More information about the header and the trailer of the \ac{TBM} are given in \ar{stbmprob}. 
 % ========================================================
-\subsection{Digital Pixel Detector}\label{s23}
-By motivation of the Phase I Upgrade of \ac{CMS} and an expected higher
+\section{Digital Pixel Detector}\label{s23}
 \begin{wrapfigure}{r}{4.5cm}
 	\vspace*{-10pt}
 	\includegraphics[width=4.4cm]{DigRocPeri}
 	\caption{Double column interface of the digital \ac{ROC} \cite{hits}}
 	\label{p12}
-	\vspace*{-10pt}
+	\vspace*{-15pt}
 \end{wrapfigure} 
-luminosity a new \ac{ROC} was designed based on the analogue one. In principle both are still very similar. An overview of the differences can be found in \ar{t3}.\\
-A limitation of the analogue \ac{ROC} was i.a. a limited buffer size for the Level 1 trigger latency. To overcome this problem the number of data buffers was increased from $32$ to $80$. To reduce the readout related dead times due to higher rate, the number of time stamp buffers doubled from $12$ to $24$. In addition the readout bandwidth had to be increased. This was done by switching to full digital readout by means of an on chip \ac{ADC}, new fast digital readout links, a \ac{PLL} to provide higher frequencies and some modifications to the control logic. The most important change regarding my thesis is the lower overall signal threshold that is required for a higher persistence of the chip \cite{hits}. This feature is indispensable for the low signals of diamonds. Going to lower thresholds was achieved by keeping the timewalk between the highest and lowest signal amplitudes within one clock cycle ($<16\,$ns) and due to reduced cross talk in the digital \ac{ROC} layout. Besides, the output of the fast-Or signal was removed from the digital \ac{ROC}.\\
-For easier usage the number of \ac{DAC} parameters was reduced to $16$. There are now only one parameter (\textit{vwllpr} and \textit{vwllsh}) for the pre-amplifier and the shaper instead of two, there is no leakage current compensation any more and the six \ac{DAC} for the double column periphery, which are responsible for the shape of the pulse height vs. \textit{vcal} curve, were condensed into \textit{vibias\_bus} and \textit{phoffset}. A comparison of the \ac{DAC}s that changed can be found in \ar{tdacchange}.
+For the Phase 1 Upgrade of \ac{CMS} a new digital \ac{ROC} was designed based on the analogue one. Their functionality is in principle still the same. An overview of the differences can be found in \ar{t3}.\\
+One of the limitation of the analogue \ac{ROC} was a limited buffer size for the Level 1 trigger latency. To overcome this problem the number of data buffers was increased from $32$ to $80$. To reduce the readout related dead times due to higher rate, the number of time stamp buffers was doubled from $12$ to $24$. In addition the readout bandwidth had to be increased. This was done by switching to a fully digital readout by means of an on-chip \ac{ADC} for every \ac{DC}, new fast digital readout links, a \ac{PLL} to provide higher frequencies and some modifications to the control logic.An important feature of the new is the lower overall signal threshold that also increases the persistence of the chip \cite{hits}. This feature is indispensable for the low signals of diamonds, which is a possible candidate for a new generation of pixel chips. Going to lower thresholds was achieved by keeping the timewalk between the highest and lowest signal amplitudes within one clock cycle ($<16\,$ns) and reducing the cross talk in the digital \ac{ROC} layout as well as lower electronic noise. Besides, the output of the fast-Or signal was removed from the digital \ac{ROC}.\\
+For easier usage the number of \ac{DAC} parameters is reduced to $16$. There is now only one parameter (\textit{vwllpr} and \textit{vwllsh}) for the pre-amplifier and the shaper instead of two and the leakage current compensation was removed. The six \ac{DAC}s for the double column periphery, which are responsible for the shape of the pulse height vs. \textit{vcal} curve, were condensed into \textit{vibias\_bus} and \textit{phoffset}. A comparison of the \ac{DAC}s that changed can be found in \ar{tdacchange}.
 \begin{table}[ht]
-	\begin{tabularx}{\textwidth}{X|X|X}\noalign{\hrule height 2pt}
+	\centering
+	\begin{tabularx}{0.85\textwidth}{X|l|l}\noalign{\hrule height 2pt}
 			 &\multicolumn{1}{c}{\textbf{psi46v2}}	&\multicolumn{1}{|c}{\textbf{psi46dig}}	\\\hline
 		\ac{ROC} size					& $7.9\times9.8\,$mm	& $7.9\times10.2\,$mm 	\\
 		Pixel size						& $100\times150\,\upmu$m& $100\times150\,\upmu$m\\
 		Smallest radius					& $4.3\,$cm				& $2.9\,$cm				\\
-		Settable \ac{DAC}s / registers	& $26$ / $3$			& $16$ / $2$			\\
+		\ac{DAC}s / registers			& $26$ / $3$			& $16$ / $3$			\\
 		Power up condition				& not defined			& default values		\\
 		Pixel charge readout			& analogue				& digitised, $8\,$bit	\\
-		Readout speed					& $40\,$MHz				& $40\,$MHz				\\
+		Readout speed					& $40\,$MHz				& $160\,$Mbit/s			\\
 		Time stamp buffer size			& $12$					& $24$					\\
 		Data buffer size				& $32$					& $80$					\\
 		Output buffer FIFO				& no					& yes					\\
@@ -271,7 +275,7 @@ For easier usage the number of \ac{DAC} parameters was reduced to $16$. There ar
 	\caption{comparison between analogue and digital \ac{ROC} \cite{hits}}
 	\label{t3}
 \end{table}\no
-\footnotetext[2]{valid for L1 version}
+\footnotetext[2]{This is valid for the layer 1 version of the digital chip, that is planned for the Phase 1 Upgrade.}
 \begin{table}[ht]
 	\begin{tabularx}{\textwidth}{c|l|l|X}
 		\noalign{\hrule height 2pt}
@@ -303,25 +307,17 @@ For easier usage the number of \ac{DAC} parameters was reduced to $16$. There ar
 	\label{tdacchange}
 \end{table}\no
 % ========================================================
-\subsection{\ac{DTB}}\label{sdtb}
-The psi46 \ac{DTB} is the interconnect between a computer and the \ac{ROC}. Usually the analogue chips were operated with an \ac{ATB}, which has some major disadvantages in comparison with the \ac{DTB}. E.g. it has only a limited amount of data it can save, s.t. during beam tests one could only take runs of approximately five minutes until the buffer was full. The more flexible, user-friendly and more extensive readout software is another advantage in my opinion. One of the achievements of this thesis is the possibility to operate analogue chips as well as digital chips with the \ac{DTB}.\\
-The \ac{DTB} connects via an adapter to the \ac{ROC}. It has two interfaces to a computer of which the ethernet is not implemented yet, s.t. the only option is the USB. Once connected to the chip and a computer, the \ac{DTB} is completely controlled with the software called pXar including the internal \ac{FPGA} which has its own firmware written by Beat Meier at \ac{PSI}. By now there more than twenty iterations of this firmware, which can be easily upgraded via USB. During my thesis I was using the the versions from $4.0$ to $4.2$.\\
+\section{Digital Test Board}\label{sdtb}
+The psi46 \ac{DTB} is the interconnect between a computer and the \ac{ROC}. In the past the analogue chips were operated with an \ac{ATB}, which has some major disadvantages in comparison with the \ac{DTB}. For example it has only a limited amount of data it can save, s.t. during beam tests one could only take runs of $300000$ events until the buffer was full. One of the achievements of this thesis is the possibility to reliably operate analogue chips as well as digital chips with the \ac{DTB}.\\
+The \ac{DTB} is powered by a $6\,$V AC to DC power supply and connects via an adapter to the \ac{ROC}. It has two interfaces to a computer of which the ethernet is not implemented yet, leaving the USB 2.0 as only option. In here lies another advantage compared to the \ac{ATB}, which only had a USB 1.1 connection: The writing speed is increased a lot. In order to use several \ac{DTB}s on the same computer, each \ac{DTB} has its own serial number. Once connected to the chip and a computer, the \ac{DTB} and its \ac{FPGA} are completely controlled with a software called pXar. The \ac{FPGA}, which is emulating the \ac{TBM}, has its own firmware developed at \ac{PSI}. By now there more than twenty iterations of this firmware, which can be easily upgraded via USB. During this thesis the firmware versions from $4.0$ to $4.2$ were utilised.\\
 It is possible to read out several signals of the \ac{DTB}. For that purpose there are two digital and two differential analogue LEMO outputs.\\
-Furthermore the \ac{DTB} has an inputs for an external clock and trigger, which only accepts \ac{TTL} signals. The height of the external trigger signal has to be at least $3\,$V to guarantee stability. Since these inputs are not terminated by $50\,\Upomega$ it is important to terminate incoming signals at the input to avoid reflections inside the cables. The \ac{DTB} has also an \ac{HV} input that is able to distribute the \ac{HV} to the \ac{ROC} via an adapter in order to bias the the sensor.\\
-The \ac{DTB} or rather its \ac{FPGA} is emulating the \ac{TBM} which is, as the name suggests in charge of token as well of the external trigger sent to the \ac{ROC}. Once it received and processed an external trigger it will send a trigger and a token in short succession to the \ac{ROC}. To keep track of the sent signals it has $4\,$ trigger and token counter as well, the trigger counter is incremented once a trigger is sent the token counter once a token is received. When the \ac{TBM} gets the token with the data stream back it adds information in form of a header and trailer to the data package. The header contains an $8-$bit event number and information about the trigger position inside the clock cycle, the trailer contains i.a. stack counter that gives information about the number of events that are stacked inside the \ac{TBM}. A stack arises if the \ac{TBM} sends out more triggers than it receives tokens, whereas the maximum stack is $16$, which is equivalent the maximum of the trigger and token counter.\\
+Furthermore the \ac{DTB} has inputs for an external clock and trigger, which accept \ac{TTL} signals. The height of the external trigger signal has to be at least $3\,$V to guarantee stability. Since these inputs are not terminated, it is very important to terminate incoming signals at the input to avoid reflections inside the cables. The \ac{DTB} also has a \ac{HV} input that is able to distribute the \ac{HV} to the sensor.
 \begin{figure}[ht]
 	\centering
-	\begin{subfigure}[b]{0.47\textwidth}
-        \includegraphics[width=\textwidth]{DTB}
-		\caption{Top view.}
-		\label{p10}
-	\end{subfigure}
+	\subbottom[Top view.]{\includegraphics[width=0.47\textwidth]{DTB}\label{p10}}
 	\hfill
-	\begin{subfigure}[b]{0.47\textwidth}
-		\includegraphics[width=\textwidth]{DTB-Sides}
-		\caption{Front and backside.}
-		\label{p11}
-	\end{subfigure}
+	\subbottom[Front and backside.]{\includegraphics[width=0.47\textwidth]{DTB-Sides}\label{p11}}
 	\caption{Photographs of the \ac{DTB}.}
 	\label{pdtb}
-\end{figure}
+\end{figure}\no
+% ========================================================

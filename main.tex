@@ -17,15 +17,20 @@
 \input{template/theoremsetup}
 \input{template/macrosetup}
 \usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+\providecommand\subfigureautorefname{Figure}
+\newsubfloat{figure}
+% \usepackage[style=verbose, backend=biber]{biblatex}
 \makeindex
 % END
 % ============================
 % DOCUMENT INFORMATION
 % ============================
-\title{Compact Pixel Tracking Telescope}
+\title{COCPITT - the COmpaCt PIxel Tracking Telescope\s
+	\LARGE Commissioning, Performance Evaluation and Applications to Beam Test Studies
+}
 \author{Michael Philipp Reichmann}
 \thesistype{Master Thesis}
-\advisors{Advisors: Prof.\ Dr.\ Rainer Wallny, Dr.\ Dmitry Hits, Felix Bachmair}
+\advisors{Advisors:  Dr.\ Dmitry Hits, Prof.\ Dr.\ Rainer Wallny}
 \department{Institute of Particle Physics}
 \date{\today}
 % ============================
@@ -45,7 +50,7 @@
 % ========================================================
 % ABSTRACT
 % ========================================================
-\input{template/abstract}
+\input{sections/abstract}
 % ========================================================
 % TOC
 % ========================================================
@@ -55,38 +60,43 @@
 % MAIN DOCUMENT
 % ========================================================
 \mainmatter
-\chapter{Motivation}
-\chapter{The Whole Picture - LHC, CMS and the Pixel Chip}
-\input{sections/cms}
+\chapter{The Origin of the Adventure - Motivation}
+\input{sections/motivation}
 \chapter{The Material Behind the Curtain - Theory}
+\input{sections/theory}
+\chapter{The CMS Pixel Chip}
+\input{sections/cms}
 \chapter{The Foundation of the Experiment - Telescope}
 \input{sections/telescope}
 \chapter{The Order of Matter - Set-up}
+\input{sections/setup}
 \chapter{The Doorway to the Information - Data Acquisition}
 \input{sections/data_aquisition}
-\chapter{Measurements}
-\chapter{Analysis}
-\chapter{Results}
-
-
+\chapter{The Reconnaissance of the Unknown - Experimental Matters}
+\input{sections/exp}\label{sexp}
+\chapter{The Investigation of the Accumulations - Analysis}
+\input{sections/analysis}
+\chapter{The Consequences of the Undertaking - Conclusions}
+\input{sections/results}
 
 % ========================================================
 % ACRONYMS
 % ========================================================
 \chapter*{List of Acronyms}
-\input{compile/acronyms.dat}
+\input{compile/acros}
 % ========================================================
 % APPENDIX
 % ========================================================
 \appendix
-\input{template/appendix}
+\chapter{Appendix}
+\input{sections/appendix}
 % ========================================================
 % BIBLIOGRAPHY
 % ========================================================
 \backmatter
 \bibliographystyle{plain}
 \bibliography{compile/refs}
-\includepdf[pages={-}]{declaration-originality.pdf}
+\includepdf[pages={-}]{sections/declaration.pdf}
 % ============================
 % DOCUMENT END
 % ============================
