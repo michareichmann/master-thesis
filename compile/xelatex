@@ -1,0 +1,10 @@
+\documentclass{memoir}
+\usepackage{fontspec}
+\setmainfont{Ubuntu Mono}
+\usepackage{kantlipsum}
+
+\begin{document}
+
+\kant[1]
+
+\end{document}

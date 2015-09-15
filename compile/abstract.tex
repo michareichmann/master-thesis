@@ -1,0 +1,40 @@
+% BEGIN
+% ETH STYLE -> DON'T CHANGE
+\documentclass[british,11pt,a4paper]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{babel}
+\usepackage[sc]{mathpazo}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage[amsmath,thmmarks]{ntheorem}
+% =======================================================
+\usepackage{soul}
+\usepackage{pdfpages}
+\graphicspath{ {Pics/} }
+\input{template/extrapackages}
+\input{../newcommands}
+\input{template/layoutsetup}
+\input{template/theoremsetup}
+\input{template/macrosetup}
+\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+\providecommand\subfigureautorefname{Figure}
+\newsubfloat{figure}
+\makeindex
+% END
+\begin{document}
+\begin{abstract}
+	The aim of this thesis is the commissioning of COCPITT - the COmpaCt PIxel Tracking Telescope, it is also meant to outline a performance evaluation and applications to beam test studies.\\
+	In the first part an introduction is given that describes the theoretical background. It follows an explanation of the working principle of the telescope's parts, especially the CMS pixel chip and of the telescope itself. Then, different set-ups are demonstrated and their applications exemplified.\\
+	The thesis explains the interconnection of the telescope with a computer utilising a digital test board. It also clarifies the functionality of the data acquisition. The data taking of the telescope in a single set-up with various devices with EUDAQ is illustrated, which allows to combine all of the data streams into a single, event based data stream.\\
+	In the last part the digital readout of the analogue CMS pixel chips is characterised and the progress of the commissioning including the encountered difficulties is specified. Furthermore some analysis of the data taken during beam test with telescope is presented.\\
+	The results of the thesis show that a stable and reliable readout of a highly flexible telescope was achieved. Using the digital test board, the telescope is able to take long and continuous data-taking runs while delivering meaningful information about tracking and pulse heights of passing particles as well as a versatile trigger for devices under test.
+	
+\end{abstract}
+% ========================================================
+% TO GET IT COMPILED
+% ========================================================
+% \chapter*{List of Acronyms}
+% \input{acros}
+% \bibliographystyle{plain}
+% \bibliography{refs}
+\end{document}

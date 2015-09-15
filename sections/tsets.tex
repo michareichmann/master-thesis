@@ -1,0 +1,51 @@
+% ========================================================
+% DIGITAL READOUT
+% ========================================================
+\section{Digital Readout of the Analogue Chip}
+Initially the analogue chips were read out with an \ac{ATB} and a software called ``psi46expert''. As already mentioned in \ar{sdtb} the \ac{DTB} has some advantages compared to the \ac{ATB}, which was the reason for trying to readout the analogue chips with the \ac{DTB} and pXar. In order to be able to accomplish that, Simon Spannagel wrote an extension to the pXar core that is able to read the data of the analogue \ac{ROC}. The extension includes the decoder described in \ar{sdec} and adds all missing \ac{DAC}s that are not used for the digital chip any more to the library. In addition it utilized the connection to the \ac{ADC} of the \ac{DTB}.
+% ========================================================
+\subsection{Functioning Check}
+First of all the basic functioning should be checked. Before connecting to the \ac{DTB} it is recommended to ascertain that the \ac{DUT} is working\footnote{Working in this context means, that it is possible to successfully readout calibrate signals} and that is has a set of appropriate \ac{DAC}s for analogue \ac{ROC} (e.g. with the \ac{ATB}). For the test board parameter file it is best to use the following lines:\s
+{\ubuntumono 
+	0		clk   4\\
+	1		ctr   4\\
+	2		sda   19\\
+	3		tin   9\s}
+For the other necessary files it possible to get default files (q.v. pXar twiki).
+% ========================================================
+\subsection{\ac{DTB} Timing}
+% ========================================================
+\subsection{Sampling Point of the \ac{ADC}}
+% ========================================================
+% WBC Scan
+% ========================================================
+\section{WBC Scan}
+% ========================================================
+% FAST-OR
+% ========================================================
+\section{Fast-OR Dependencies}
+% ========================================================
+% TRIMMING
+% ========================================================
+\section{Trimming}
+% ========================================================
+% DYING FAST-OR
+% ========================================================
+\section{\ac{TBM} problems - dying fast-OR}
+% ========================================================
+% CLI TESTS
+% ========================================================
+\section{\ac{CLI} Test Implementations}
+% ========================================================
+% DIA SHADOW
+% ========================================================
+\section{Finding \ac{DUT} Shadows}
+% ========================================================
+% EUDAQ AND TLU
+% ========================================================
+\section{Implementation of EUDAQ and \ac{TLU} }
+% ========================================================
+% PULSE HEIGHT CAL
+% ========================================================
+\section{Pulse Height Calibration}
+% ========================================================

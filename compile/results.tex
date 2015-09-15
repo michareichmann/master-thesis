@@ -1,0 +1,36 @@
+% BEGIN
+% ETH STYLE -> DON'T CHANGE
+\documentclass[british,11pt,a4paper]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{babel}
+\usepackage[sc]{mathpazo}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage[amsmath,thmmarks]{ntheorem}
+% =======================================================
+\usepackage{soul}
+\usepackage{pdfpages}
+\graphicspath{ {Pics/} }
+\input{template/extrapackages}
+\input{../newcommands}
+\input{template/layoutsetup}
+\input{template/theoremsetup}
+\input{template/macrosetup}
+\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
+\providecommand\subfigureautorefname{Figure}
+\newsubfloat{figure}
+\makeindex
+% END
+\begin{document}
+\chapter{The Consequences of the Undertaking - Results}
+
+This thesis could demonstrate the functioning of COCPITT with all its desired features. It was proven that is possible to read out the analogue CMS pixel chips with a \ac{DTB}. All arising problems could be solved. Due to the digital readout there is in principle no limit for the data-taking any more except the size of a computer's hard drive.\\
+It was also shown that the telescope is very flexible and easy to deploy in various environments. It can be used to examine different \ac{DUT}s like diamond pad detectors or digital CMS pixel detectors for example.\\
+Furthermore, the telescope delivers a reliable trigger for itself and for the \ac{DUT} that has a freely adjustable trigger area using the ability to mask pixels. Above all it has been demonstrated that COCPITT gathers meaningful information about pulse heights and particle tracks.\\
+The goal for the future is a complete table-top set-up of the telescope by replacing replacing the trigger logic by the \ac{TU} of the Ohio State University. That way the telescope will work out of the box with almost no installation time. It is also planned to conduct a study of telescope's resolution exploiting the residual distribution of the particle tracks.
+% ========================================================
+% TO GET IT COMPILED
+% ========================================================
+\chapter*{List of Acronyms}
+\input{acros}
+\end{document}

@@ -1,0 +1,122 @@
+\section{Applied Software}\label{ssoft}
+The master branch of pXar and the branch that used during the thesis can be downloaded from git: 
+\begin{itemize}
+	\item \url{https://github.com/psi46/pxar}
+	\item \url{https://github.com/michareichmann/pxar}
+\end{itemize}
+More information as well a detailed installation instruction can be found at the \ac{CMS} twiki: 
+\begin{itemize}
+	\item \url{https://twiki.cern.ch/twiki/bin/viewauth/CMS/Pxar} $rightarrow$ branch eth-2.0
+\end{itemize}
+The version of EUDAQ that was used can be found here: 
+\begin{itemize}
+	\item \url{https://github.com/veloxid/eudaq-drs4}. 
+\end{itemize}
+\section{Example Configuration Files}\label{sconfig}
+\subsubsection{dacParameters\_C1.dat}
+\ubuntu
+\begin{tabular}{llr}
+\hline
+1	&	vdig	&	6	\\
+2	&	vana	&	119	\\
+3	&	vsh	&	140	\\
+4	&	vcomp	&	10	\\
+5	&	vleak	&	0	\\
+6	&	vrgpr	&	0	\\
+7	&	vwllpr	&	35	\\
+8	&	vrgsh	&	0	\\
+9	&	vwllsh	&	35	\\
+10	&	vhlddel	&	160	\\
+11	&	vtrim	&	100	\\
+12	&	vthrcomp	&	101	\\
+13	&	vibias\_bus	&	30	\\
+14	&	vbias\_sf	&	10	\\
+15	&	voffsetop	&	30	\\
+16	&	vibiasop	&	50	\\
+17	&	phoffset	&	120	\\
+18	&	vion	&	130	\\
+19	&	vcomp\_adc	&	120	\\
+20	&	phscale	&	109	\\
+21	&	vibias\_roc	&	150	\\
+22	&	vicolor	&	99	\\
+23	&	vnpix	&	40	\\
+24	&	vsumcol	&	6	\\
+25	&	vcal	&	255	\\
+26	&	caldel	&	140	\\
+253	&	ctrlreg	&	4	\\
+254	&	wbc	&	100	\\\hline
+\end{tabular}
+\subsubsection{tbParameters.dat}
+\ubuntu
+\begin{tabular}{llr}
+\hline
+0	&	clk	&	12	\\
+1	&	ctr	&	12	\\
+2	&	sda	&	24	\\
+3	&	tin	&	14	\\
+4	&	tout	&	5	\\
+252	&	level	&	15	\\
+247	&	tindelay	&	14	\\
+248	&	toutdelay	&	8	\\
+251	&	triggerlatency	&	80	\\
+254	&	deser160phase	&	4	\\\hline
+\end{tabular}
+\subsubsection{configParameters.dat}
+\ubuntu
+\begin{tabular}{llr}
+\hline
+\multicolumn{2}{l}{-- parameter files}		\\
+	&				\\
+tbParameters	&	tbParameters.dat			\\
+dacParameters	&	dacParameters			\\
+tbmParameters	&	tbmParameters			\\
+trimParameters	&	trimParameters			\\
+testParameters	&	testParameters.dat			\\
+maskFile	&	defaultMaskFile.dat			\\
+rootFileName	&	pxar.root			\\
+	&				\\
+\multicolumn{2}{l}{-- configuration}	\\
+	&				\\
+nModules	&	1			\\
+\#nRocs	&	1	i2c:	0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15	\\
+nRocs	&	1	i2c:	1	\\
+nTbms	&	0			\\
+hubId	&	0			\\
+tbmEnable	&	0			\\
+tbmEmulator	&	0			\\
+hvOn	&	1			\\
+tbmChannel	&	0			\\
+rocType	&	psi46v2			\\
+	&				\\
+probeA1	&	sdata1			\\
+probeA2	&	sdata2			\\
+probeD1	&	clk			\\
+probeD2	&	ctr			\\
+	&				\\
+\multicolumn{2}{l}{-- voltages and current}	\\
+	&				\\
+ia	&	1.199			\\
+id	&	1			\\
+va	&	1.699			\\
+vd	&	2.5			\\
+\hline
+\end{tabular}
+\subsubsection{trimParameters.dat}
+\ubuntu
+\begin{tabular}{lllr}
+\hline
+3	&	Pix	&	0	&	0	\\
+2	&	Pix	&	0	&	1	\\
+5	&	Pix	&	0	&	2	\\
+5	&	Pix	&	0	&	3	\\
+4	&	Pix	&	0	&	4	\\
+4	&	Pix	&	0	&	5	\\
+4	&	Pix	&	0	&	6	\\
+5	&	Pix	&	0	&	7	\\
+4	&	Pix	&	0	&	8	\\
+8	&	Pix	&	0	&	9	\\
+8	&	Pix	&	0	&	10	\\
+\multicolumn{4}{c}{$\vdots$}\\
+\hline
+\end{tabular}
+% ========================================================
