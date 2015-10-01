@@ -1,125 +1,17 @@
-% BEGIN
-% ETH STYLE -> DON'T CHANGE
 \documentclass[british,11pt,a4paper]{memoir}
-\usepackage[utf8]{inputenc}
-\usepackage[OT1]{fontenc}
-\usepackage{babel}
-\usepackage[sc]{mathpazo}
-\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
-\usepackage[amsmath,thmmarks]{ntheorem}
-% =======================================================
-\usepackage{soul}
-\usepackage{pdfpages}
-\graphicspath{ {Pics/} }
-\input{template/extrapackages}
-\input{../newcommands}
-\input{template/layoutsetup}
-\input{template/theoremsetup}
-\input{template/macrosetup}
-\usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
-\providecommand\subfigureautorefname{Figure}
-\newsubfloat{figure}
-\makeindex
-% END
+\input{preamble}
+% ========================================================
 \begin{document}
-% \tableofcontents
-\chapter{The Whole Picture - LHC, CMS and the Pixel Chip}
 \tableofcontents
 % ========================================================
-% INTRO
+% CMS Pixel Chip
 % ========================================================
-% Being a tiny part of the \ac{CMS} collaboration I would like to start by clarifying how my experiment is integrated into the amazing project called the \ac{LHC}.
-% % ========================================================
-% % LHC
-% % ========================================================
-% \section{\acf{LHC}}
-% The LHC is the most powerful high energy particle accelerator that has ever been built on earth. The collider is located in a circular tunnel of $26659\,$m in circumference, which encloses an area of an area of $56.6\,$km$^{2}$ and partly underneath the territory of \ac{CERN}. It crosses the border between Switzerland and France and is close to the Swiss city Geneva. The accelerated particles are usually protons that are colliding with a \ac{COM} energy of $13\,$TeV \cite{lhc}, but there are also experiments with heavy ions.
-% % ========================================================
-% \subsection*{Accelerator Complex}
-% In order to increase the energy of the protons from a few meV (kinetic energy) at room temperature up to $6.5\,$TeV a succession of machines is required. Each of these machines increases the energy successively and injects the protons into the next machine until it finally reaches the last iteration, the \ac{LHC}. A schematic of the whole process can be found in \ar{p18}.\\
-% The protons are coming from an ordinary bottle of compressed hydrogen, whose molecules are stripped of their electrons in the source chamber of the linear accelerator LINAC2 which then accelerates them to $50\,$MeV using radiofrequency cavities. Having passed LINAC2, the particles are injected into the first circular accelerator, the \ac{PSB} where they are accelerated up to $1.4\,$GeV, which is already equivalent to $91.6\%$ of the speed of light. After that the \ac{PS} and the \ac{SPS} further increase their energy to $25$ respectively $450\,$GeV. Once the protons leave \ac{SPS} they are injected both clockwise and anti-clockwise into the two beam tubes of \ac{LHC} where they reach their final energy of $6.5\,$TeV within approximately $20$ minutes. Having $99.9999991\%$ of the speed of light the protons are now over $7000$ times heavier than the at rest.\\
-% There are four major and two smaller experiments that use the \ac{LHC} as particle source: the two general purpose detectors \ac{CMS} and \ac{ATLAS}, a experiment designed for b-physics \ac{LHCb} and \ac{ALICE}, which is using heavy ions. The four major experiments are located in underground caverns around the interaction points. The \ac{LHCf} and a \ac{TOTEM} are the two smaller experiments; the first is one near \ac{ATLAS} and the latter close the interaction point of \ac{CMS}.
-% \begin{figure}[ht]
-% 	\includegraphics[width=0.95\textwidth]{lhc}
-% 	\caption{Schematic of the \ac{LHC} accelerator complex \cite{lhc}.}
-% 	\label{p18}
-% \end{figure}
-% % ========================================================
-% % CMS
-% % ========================================================
-% \section{\acf{CMS}}
-% \ac{CMS}, one of the general experiments at \ac{LHC}, is located beneath the French town Cessy. One of its main goals was the recent discovery of a new boson (assumed to be Higgs). Now the remaining  goals are the study of the properties of this boson and the search for evidence of physics beyond the Standard Model, in particular \ac{SUSY} and extra dimensions. The name \ac{CMS} derives from its design, which is rather small compared to other detectors of its capability (\ac{ATLAS}). \ac{CMS} has an excellent ability to measure myon tracks and a unique, very strong solenoid magnet.\\
-% A sectional view of the whole detector is shown in \ar{p19}. It is set up in many shells of sub-detectors like layers of an onion. After the interaction, particles first pass the innermost detector, which is a tracker detector that measures i.a. the trajectory. After that comes an \ac{ECAL} and a \ac{HCAL} that measure the energy of the particles. The already mentioned sub-detectors are enclosed by the solenoid. The outermost layers outside of the coils consist of muon chamber. The \ac{CMS}-Pixel chip that is important for this thesis, is located in the innermost layer and is part of the tracker detector.
-% \begin{figure}[ht]
-% 	\centering
-% 	\includegraphics[width=0.95\textwidth]{cms_cut}
-% 	\caption{Sectional view of the CMS detector \cite{cmsdet}.}
-% 	\label{p19}
-% \end{figure}
-% % ========================================================
-% \subsection{Solenoid}
-% The shape of the solenoid strongly determines the whole design of the detector. A solenoid is a magnet of coils that are tightly wound into helices and have uniform magnetic field inside the helix, once constant electric current flows through the wires. Its purpose is to bend the paths of the particles that are created at the interaction point. It was aimed to be the strongest possible magnet since a stronger magnetic field leads to a smaller bending ratio of the particle gets and consequently increases the momentum resolution of the tracker. To reach a final magnetic field strength of $4\,$Tesla the whole magnet is cooled down to a temperature of $-268.5\,^{\circ}$C to guarantee superconductivity. Interestingly, particles with an energy of less than $1.6\,$GeV will circle inside the detector and will traverse to the end caps on a helical trajectory without ever reaching the calorimeter. 
-% % ========================================================
-% \subsection{Tracker Detector}
-% The main goal of the tracker detector is to measure the momentum and the trajectory of passing particles to be able to get an idea of the incidents after the collision. The momentum is calculated using the circular trajectory of charged particles caused by the magnetic field. The \ac{CMS} tracker records the path of the charged particle by finding its position at a number of key points at each sub-layer of the detector. That way it is possible to precisely reconstruct paths of long living particles such as muons, electrons or hadrons, but also see the tracks of short living particles such as the beauty quark.\\
-% For the whole experiment is very important to measure precise tracks on the one hand as well as to have as less disturbing\footnote{Less disturbing in that context means that the interactions of the Particles with the whole tracking detector has to be kept at a minimum.} of the particles as possible. That is one reason why only a certain number of points are measured for the tracking rather than than the maximum number. This was accomplished building $3$ layers of sub-tracker detectors around the beam line.\\
-% The innermost layer of the detector is located but $4.4\,$cm away from the interaction point where the detectors are exposed to an approximate particle flux of $100\,$Mhz\,cm$^{-2}$. That is why the most important properties of the detector have to be radiation hardness and the ability to process a very high rate of events. When the current detector was built, it was decided to make it completely out of silicon. To be able to deal with the high number of particles the inner layers are made of pixel detectors whereas the outer ones, more than $20\,$cm away from the interaction point, are made out of strip detectors.
-% % ==========================
-% \subsubsection{Pixel Detector}
-% Though only roughly the size of a shoe box, the Pixel Detector at \ac{CMS} contains $65$ million single pixels. They are arranged in three layers of barrel detectors $4.4\,$cm, $7.3\,$cm and $10.2\,$cm away from the beam and two forward detectors at either end (q.v. \ar{p22}). This system is able to reconstruct the tracks of ten million track per second and was build to withstand the duration for an operation time of ten years up to the Phase 1 Upgrade. Due to the huge amount of pixels it important keep the power consumption of the \ac{ROC}s at a minimum. Although they only need $50\,\upmu$W per pixel they are still mounted on cooling tubes so that the detector will not overheat. The cooling is also important reduce the electronic noise.\\
-% The \ac{CMS} Pixel Detector is also the most important part concerning my thesis and is explained in further detail in \ar{s130}.
-% \begin{figure}[ht]
-% 	\centering
-% 	\subbottom[\ac{CMS} silicon pixel detector \cite{cmsweb}.\label{p21}]{\includegraphics[width=0.47\textwidth]{pixelement}}
-% 	\hfill
-% 	\subbottom[Pixel layers around the beam line \cite{bora}.\label{p22}]{\includegraphics[width=0.47\textwidth]{barrel}}
-% 	\caption{Schematics of the pixel detector.}
-% 	\label{ppixdet}
-% \end{figure}\no
-% % ==========================
-% \subsubsection{Strip Detector}
-% Ten layers of strip detectors up to a radius of $130\,$cm surround the three pixel layers. A schematic of the way strip detectors are placed around the beam line is shown in \ar{p23}. First come four inner barrel layers with two inner endcaps. After them follow the outer layers: two double sided and four one sided barrel layers. Altogether the tracker detector consist of $10$ million silicon strips, which have the same working principle as the pixel detectors even though different chips are used for the readout. The whole system is also cooled down, in this case to a temperature of $-20\,^{\circ}$C.
-% \begin{figure}[ht]
-% 	\centering
-% 	\includegraphics[width=0.4\textwidth]{strip}
-% 	\caption{Tracker layers perpendicular to the beam \cite{cmsweb}.}
-% 	\label{p23}
-% \end{figure}
-% % ========================================================
-% \subsection{Calorimeter}
-% In particle physics a calorimeter is a device to measure the energy of particles. When a particle enters the detector material a chain reaction called particle shower is started until the incident particle has deposited all its energy in the calorimeter. In many cases the detectors have transverse segmentation to provide information about the direction of the particle and longitudinal segmentation to get information about the identity of a particle by the shape of the shower. Since electrons and photons interact very differently with matter compared to hadrons, two different types of calorimeters are required: the \ac{ECAL} and the \ac{HCAL}.
-% % ==========================
-% \subsubsection{\ac{ECAL}}
-% The \ac{ECAL} consists of $75848$ lead tungstate crystals (\chemfig{PbWO_{4}}), which is a scintillating material. With a short radiation length, narrow showers and a good radiation hardness \chemfig{PbWO_{4}} has excellent properties to function in such an environment. Glued on top of the crystals are photodetectors that collect the light, amplify it and transform it into into a electric signal, which then can be analysed.
-% % ==========================
-% \subsubsection{\ac{HCAL}}
-% The \ac{HCAL} is built to measure hadrons which consist out of quarks and gluons. It was designed to be as hermetic as possible, i.e. to stop every particle from the collision in order to be able to draw conclusions about missing transverse energy. It is a so called sampling calorimeter which means that it finds the position, energy and arrival of a particle by using repeating layers of a dense brass absorber and plastic scintillators. This repeating architecture is also called sandwich structure. The \ac{HCAL} is the last part of the detector that is placed inside the solenoid.
-% % ========================================================
-% \subsection{Muon Chambers}
-% Arranged on the outside of the solenoid are the muon chambers, since muons can even penetrate very dense material without losing a lot of energy. They are produced as decay products of many particles including potential new ones and thus play an import role as signals that can be triggered on. The whole muon detector consists of $1400$ muon chambers that split up into $250$ drift tubes and $540$ cathode strip chambers that track the particles and provide a trigger. The other part are $610$ resistive plate chambers that form a redundant trigger system, which decides weather to keep the data or not.
-% % ========================================================
-% \subsection{Examples}
-% A diagram of all parts and the positioning within the \ac{CMS} detector is shown in \ar{p20}. It also demonstrates how typical particles will behave passing through the various steps. Photons and electrons are both stopped in the \ac{ECAL} but due to their charge electrons show a curved path in the tracker whereas photon tracks are straight. Charged hadrons will also leave a curved track and are generally stopped in the \ac{HCAL}. Because most myons are \ac{MIP}s they will not stop at all, but show a double curved track due the opposite magnetic field on the outside of the Solenoid.
-% \begin{figure}[ht]
-% 	\centering
-% 	\includegraphics[width=0.95\textwidth]{cms_slice}
-% 	\caption{Sliced view of the CMS detector with tracks of various particles \cite{cmsweb}.}
-% 	\label{p20}
-% \end{figure}
-% % ========================================================
-% \subsection{Trigger System}
-% With almost a billion interactions per second\footnote{Roughly $20$ interactions per collision at a rate of $40\,$Mhz add up to a billion interactions} it is almost impossible to save or even analyse every single event. That is why a trigger system is required to save only the interesting events. Since there are collisions every $25\,$ns the data is stored in pipelines with precise timing information for a short time. In order not to mix up information from different events it is very important to synchronise the data streams. \\
-% The first step to reduce the huge amount of information happens through the level 1 trigger, which is a full hardware trigger that decides within $3.2\,\upmu$s if the event could contain interesting physics based on information of the calorimeter and the muon chambers. These are events with large amount of energy or unusual combination of particles for example. The level 1 trigger selects $100\,$kHz of events out of the $1\,$GHz that are available. In the next step, the high level trigger, the whole event is recreated and the information sent to computers to pre-analyse it, which makes it a full software trigger. In the end only $100$ events per second are considered interesting and will be saved.\\ 
-% The delays and the principle of the level 1 trigger of \ac{CMS} is important because it has direct connection to the trigger system used in the experiments concerning this thesis. 
-% % ========================================================
-% % CMS Pixel Chip
-% % ========================================================
-
-The CMS pixel chip is a tiny part of a detector of the world's most powerful high energy particle accelerator, the \ac{LHC}. It is utilised in the innermost layers of the tracker detector of \ac{CMS}, one of the two general purpose experiments at the \ac{CERN}. There it is essentially used to reconstruct particle tracks and measure the momenta of the charged particle using the tracks. The whole \ac{CMS} pixel detector is based on the pixel chip psi46v2 which has an analogue readout. During the Phase 1 Upgrade it is planned to exchange all of them with a more efficient digital silicon chip. It was also decided to add a fourth layer to the pixel detector. Due to the increase of the luminosity and \ac{COM} energy the Phase 2 Upgrade will require different materials for the innermost layers. A potential candidate are diamond pixel chips. Among other advantageous properties diamond is much more radiation resistant than silicon. Though, if diamonds are suited for that purpose is still under test.\\
-During this thesis both analogue and digital silicon chips were used and there even was an opportunity to test digital diamond pixel chips. The purpose for the conducted experiments is in parts the exact same as for \ac{CMS}: use several \ac{ROC}s as tracking device. Additional applications will be described in the following.
+\chapter{The CMS Pixel Chip}
+The CMS pixel chip is a tiny part of a detector of the world's most powerful high energy particle accelerator, the \ac{LHC}. It is utilised in the innermost layers of the tracker detector of \ac{CMS}, one of the two general purpose experiments at the \ac{CERN}. There it is used to reconstruct particle tracks and measure the momenta of the charged particle using the tracks. The whole \ac{CMS} pixel detector is based on the pixel chip psi46v2 which has an analogue readout. During the Phase 1 Upgrade it is planned to exchange all of them with a more efficient digital silicon chip. It was also decided to add a fourth layer to the pixel detector. Due to the increase of the luminosity and \ac{COM} energy the Phase 2 Upgrade will require materials with higher radiation tolerance for the innermost layers. A potential candidate are diamond pixel chips. Among other advantageous properties diamond is on order of magnitude more radiation resistant than silicon. Though, whether diamonds are suited for that purpose is still under investigation.\\
+During this thesis both analogue and digital silicon chips were tested and there even was an opportunity to test digital pixel chips with a poly-crystalline diamond sensor.
 % ========================================================
 \section{Analogue Pixel Detector}\label{s130}
-The analogue pixel detector was designed, inter alia, to precisely reconstruct hits, withstand radiation damage for several years of operation, keep multiple scattering at a minimum and avoid fake hits due to noise in electronics. Each single chip consists out of $4160$ pixels in $26$ double columns and $80$ rows. The single pixels have a size of $150\,\upmu$m $\times$ $100\,\upmu$m, which adds up to a total size of $7.8\,$mm $\times\ 8.0\,$mm (q.v. \ar{p24}) and corresponds to an area of a little more than half a square centimetre. The detector itself consists of two parts: a pixelated silicon sensor and a \ac{ROC}, which have both the same arrangement of pixels. The bump bonds are schematically shown in \ar{pbumpbonds} They are attached to one another and electrically connected via indium bump bonds of roughly $20\,\upmu$m in diameter \cite{kaestli}. The connection from the \ac{ROC} to the readout as well as the connection to the bias voltage is made via delicate wire-bonds.
+The analogue pixel detector was designed, inter alia, to precisely reconstruct the position of particle hits, withstand radiation damage for several years of operation, keep multiple scattering at a minimum and avoid fake hits due to noise in electronics. Each chip consists of $4160$ pixels in $26$ double columns and $80$ rows. The single pixels have a size of $150\,\upmu$m $\times$ $100\,\upmu$m. The total size of the pixelated area adds up to a total size of $8.1\,$mm $\times\ 8.1\,$mm (q.v. \ar{p24}), because the edge rows and columns are slightly bigger. That corresponds to an area of a little more than half a square centimetre. The detector itself consists of two parts: a pixelated silicon sensor and a \ac{ROC}. They are attached to one another and electrically connected via indium bump bonds of roughly $20\,\upmu$m in diameter \cite{kaestli}, which are schematically shown in \ar{pbumpbonds}. The connection from the \ac{ROC} to the readout as well as the connection to the bias voltage is made via wire-bonds.
 \begin{figure}[ht]
 	\centering
 	\subbottom[Principle of a sensor bump bonded to the a chip \cite{dectris}.]{\includegraphics[width=0.47\textwidth]{bumpbonds}\label{pbumpbonds}}
@@ -130,7 +22,7 @@ The analogue pixel detector was designed, inter alia, to precisely reconstruct h
 \end{figure}\no
 % =======================
 \subsection{Sensor}\label{s220}
-For the current detector silicon was chosen as sensor material. The average energy to create an electron-hole pair in silicon is $3.6\,$eV. By applying a bias voltage to the sensor the charge carriers are moved to the collecting electrode and a signal can be measured. The silicon sensor itself consists of high-dose n-implanted pixels introduced into a high resistive n-substrate. The backside of the sensor is p-doped and thus creates a pn-junction \cite{allkofer}. The small pixel size was chosen to get a good spatial resolution. The thickness of the sensor is about $285\,\upmu$m so that minimum ionising particles will most probably create approximately $22000$ electron-hole pairs\footnote{The energy is loss is Landau distributed. This value is equivalent to the peak value of this distribution (q.v. \ar{slandau})} in the sensor. In order to fully deplete an unirradiated sensor of that thickness completely one has to apply a bias voltage of roughly $100\,$V \cite{pixadd}. For irradiated detectors that value may be a couple times higher, depending on the irradiation damage. 
+For the current detector silicon is used as sensor material. The average energy to create an electron-hole pair in silicon is $3.6\,$eV. By applying a bias voltage to the sensor the charge carriers are moved to the collecting electrode and a signal can be measured. The silicon sensor itself consists of high-dose n-implanted pixels introduced into a high resistive n-substrate. The backside of the sensor is p-doped and thus creates a pn-junction \cite{allkofer}. The small pixel size was chosen to get a good spatial resolution. The thickness of the sensor is about $285\,\upmu$m so that minimum ionising particles will most probably create approximately $22000$ electron-hole pairs\footnote{The energy is loss is Landau distributed. This value is equivalent to the peak value of this distribution (q.v. \ar{slandau})} in the sensor. In order to fully deplete an unirradiated sensor of that thickness completely one has to apply a bias voltage of roughly $100\,$V \cite{pixadd}. For irradiated detectors that value may be a couple times higher, depending on the irradiation damage. 
 % =======================
 \subsection{\acs{ROC}}\label{sroc}
 The \ac{ROC} has two parts: An active part consisting out of $26$ double columns of $2\times80$ \ac{PUC}s matching the pixels of the sensor and a periphery consisting of a control interface block, a data buffer, a time-stamp buffer and $35$ supply pads; this is depicted in \ar{p8}. All the signals going to and coming from the \ac{ROC} are put on these supply pads.\\
@@ -141,15 +33,15 @@ In order for the \ac{ROC} to record data, handle triggers and manage the readout
 	\item an $4\,$bit trigger counter,
 	\item an $4\,$bit token counter.
 \end{enumerate}\par
-The periphery is the reason is why the \ac{ROC} is with $7.9\,$mm$\times\ 9.8\,$mm 
-\begin{wrapfigure}{l}{7.2cm}
+The periphery is the reason is why the \ac{ROC} is with $7.9\,$mm$\times\ 9.8\,$mm a
+\begin{wrapfigure}{l}{7.3cm}
 	\vspace*{-10pt}
 	\includegraphics[width=7.2cm]{ROC_scheme}
-	\caption{schematics of a \ac{ROC} \cite{psi46chip}}
+	\caption{Schematics of a \ac{ROC} \cite{psi46chip}.}
 	\label{p8}
 	\vspace*{-5pt}
 \end{wrapfigure}  
-a few millimetres longer than the pixelated area of the sensor. The \ac{ROC} is programmable with a set of  $26$ \ac{DAC} values (q.v. \ar{t0}) that are required to control its behaviour. More details about the \ac{DAC}s can be found in \ar{sdacs}. The \ac{ROC} and its behaviour is temperature dependent, which is why it is also equipped with a temperature sensor.\\
+few millimetres longer than the pixelated area of the sensor. The \ac{ROC} is programmable with a set of  $26$ \ac{DAC} values (q.v. \ar{t0}) that are required to control its behaviour. More details about the \ac{DAC}s can be found in \ar{sdacs}. The \ac{ROC} and its behaviour is temperature dependent, which is why it is also equipped with a temperature sensor.\\
 If electron-hole pairs are created in the sensor, a voltage signal is induced in the corresponding \ac{PUC}. A schematic of a \ac{PUC} is shown in \ar{p9}. Once a signal enters the \ac{PUC} it gets amplified and shaped. If it exceeds a certain threshold, which is tunable with one the \ac{DAC}s, a signal is immediately sent to the periphery that will save the current bunch crossing into the time stamp buffer. The information of the hit (the \ac{PUC} address and the \ac{PH}) will be sent to a sample and hold capacitance until it is read out, which happens every $25\,$ns. Once read out, the data is stored in the data buffer.\\ 
 There is an option to sent calibration signals directly to the front end of the \ac{PUC} that makes it very easy to test the basic functionality of the \ac{ROC} without requiring any particle hits. For every pixel the \ac{PUC} has a register to enable and disable sending these calibrates.\\
 Furthermore, an important feature of the analogue \ac{ROC} is the so called fast-OR. Every time the threshold of a single pixel is exceeded, the \ac{ROC} sends out this signal. It is an logical OR of all pixels of the \ac{ROC} and its shape gives, inter alia, conclusions about the distribution of hit pixels (q.v. \ar{sfastor}). It is very important as trigger signal for other devices or as self trigger.
